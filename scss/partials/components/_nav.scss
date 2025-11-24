@@ -1,5 +1,52 @@
 /* Estilos de la barra de navegación */
 
+.nav-bg{
+    background-color: rgba(26, 26, 46, 0.95) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    width: 150rem;
+}
 
+.nav-bg a{
+    font-family: "Mouse Memoirs", sans-serif;
+    color: var(--nav-text) !important;
+    font-size: 2.8rem;
+    letter-spacing: 0.1rem; /* Espaciado de letras */
+    text-decoration: none;
+}
+
+.links-nav{
+    margin: 0 1.5rem; /* Espaciado entre enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border-bottom: 1px solid transparent; /* Borde inferior */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+
+    &:hover {
+        border-bottom: 1px solid #8b0000; /* Cambia el color del borde al pasar el ratón */
+    }
+}
+
+.nav-ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-ul .nav-li{
+    flex: 1;
+    text-align: center;
+}
+
+.icon-nav {
+    width: 5rem; /* Ancho del icono */
+    height: 5rem; /* Altura del icono */
+    margin: auto 1rem; /* Espaciado alrededor del icono */
+    fill: var(--color-bronze); /* Color del icono */
+}
 
 
