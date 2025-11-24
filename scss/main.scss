@@ -1,14 +1,8 @@
-/*Estilos globales*/
+/*Estilos Base Globales*/
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-}
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+@use "./partials/base/bg-body";
 
 /* Estilos encabezdo h1 */
 

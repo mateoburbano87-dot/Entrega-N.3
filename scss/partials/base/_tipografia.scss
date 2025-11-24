@@ -1,0 +1,44 @@
+/*Estilos de tipografía globales*/
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/* Estilos encabezdo h1 */
+h1 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 4rem;
+  color: #e8e8e8;
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.3) 0%, rgba(26, 26, 46, 0.8) 50%, rgba(139, 0, 0, 0.3) 100%);
+  box-shadow: 0 0 20px rgba(139, 0, 0, 0.4);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 2rem 6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+/* Estilos encabezado h2 */
+h2 {
+  font-family: "Instrument Serif", serif;
+  font-size: 3.2rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px #8b4513;
+  padding: 1rem;
+  margin: 2rem 4rem;
+  text-align: left;
+  text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+}
+
+/* Estilos encabezado h3 */
+h3 {
+  font-family: "Fascinate Inline", system-ui;
+}
+
+/* Estilos párrafos */
+p {
+  font-family: "Amarante", serif;
+}
