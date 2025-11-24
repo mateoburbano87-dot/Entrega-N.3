@@ -125,7 +125,7 @@ body {
     font-size: 2.2rem;
     text-align: justify;
     line-height: 1.8;
-    color: var(--text-primary);
+    color: #e8e8e8;
     padding: 1rem;
     max-width: 100rem;
     width: 100%;
@@ -135,9 +135,9 @@ body {
 
 .container-intro-img img {
     width: 85%; /* Ajusta el tamaño de la imagen según sea necesario */
-    box-shadow: var(--image-shadow);
+    box-shadow: 0 8px 25px rgba(139, 0, 0, 0.3);
     border-radius: 1rem; 
-    border: var(--image-border);
+    border: 2px solid #8b4513;
     display: block; /* Convertir en bloque para centrar */
     margin: 0 auto; /* Centrar horizontalmente */
     grid-column: 2 / 3; 
@@ -146,8 +146,8 @@ body {
 .img-descrip {
     font-family: "Amarante", serif;
     font-size: 1.8rem;
-    color: var(--image-caption-color);
-    background-color: var(--image-caption-bg);
+    color: #cd7f32;
+    background-color: rgba(26, 26, 46, 0.9);
     text-align: center; 
     padding: 0.5rem; 
     margin-top: 2rem;
@@ -162,7 +162,7 @@ body {
     font-size: 2.3rem;
     text-align: justify;
     line-height: 1.6;
-    color: var(--text-primary);
+    color: #e8e8e8;
     padding: 1rem;
     max-width: 100rem; 
     width: 100%; 
@@ -173,9 +173,9 @@ body {
 
 .subtitulo{
     font-size: 3.2rem;
-    color: var(--h2-color);
-    background: var(--h2-bg);
-    border-bottom: var(--h2-border);
+    color: #cd7f32;
+    background: rgba(26, 26, 46, 0.9);
+    border-bottom: 1px solid #8b4513;
     border-radius: 2rem;
     padding: 1rem;
     margin: 0 auto;
@@ -202,16 +202,16 @@ body {
 }
 
 .grid-perfil {
-    background-color: var(--table-bg);
+    background-color: rgba(26, 26, 46, 0.9);
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 12px var(--shadow-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .grid-perfil h3 {
     font-size: 2.8rem;
-    color: var(--h3-color);
-    background: var(--h3-bg);
+    color: #cd7f32;
+    background: rgba(26, 26, 46, 0.9);
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -220,22 +220,22 @@ body {
 
 .grid-perfil p {
     font-size: 2rem;
-    color: var(--text-secondary);
+    color: #e8e8e8;
     line-height: 1.6;
     text-align: justify;
 }
 
 .grid-metodos {
-    background-color: var(--table-bg);
+    background-color: rgba(26, 26, 46, 0.9);
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 12px var(--shadow-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .grid-metodos h3 {
     font-size: 2.8rem;
-    color: var(--h3-color);
-    background: var(--h3-bg);
+    color: #cd7f32;
+    background: rgba(26, 26, 46, 0.9);
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -244,22 +244,22 @@ body {
 
 .grid-metodos p {
     font-size: 2rem;
-    color: var(--text-secondary);
+    color: #e8e8e8;
     line-height: 1.6;
     text-align: justify;
 }
 
 .grid-seleccion {
-    background-color: var(--table-bg);
+    background-color: rgba(26, 26, 46, 0.9);
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 12px var(--shadow-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .grid-seleccion h3 {
     font-size: 2.8rem;
-    color: var(--h3-color);
-    background: var(--h3-bg);
+    color: #cd7f32;
+    background: rgba(26, 26, 46, 0.9);
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -268,22 +268,22 @@ body {
 
 .grid-seleccion p {
     font-size: 2rem;
-    color: var(--text-secondary);
+    color: #e8e8e8;
     line-height: 1.6;
     text-align: justify;
 }
 
 .grid-motivaciones{
-    background-color: var(--table-bg);
+    background-color: rgba(26, 26, 46, 0.9);
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 12px var(--shadow-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .grid-motivaciones h3 {
     font-size: 2.8rem;
-    color: var(--h3-color);
-    background: var(--h3-bg);
+    color: #cd7f32;
+    background: rgba(26, 26, 46, 0.9);
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -292,7 +292,7 @@ body {
 
 .grid-motivaciones p {
     font-size: 2rem;
-    color: var(--text-secondary);
+    color: #e8e8e8;
     line-height: 1.6;
     text-align: justify;
 }
