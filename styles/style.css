@@ -410,8 +410,8 @@ body {
 
 .seccion-comparacion h3 {
   font-size: 2.8rem;
-  color: var(--h3-color);
-  background: var(--h3-bg);
+  color: #8a8a8a;
+  background: rgba(26, 26, 46, 0.9);
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
