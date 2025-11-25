@@ -706,4 +706,22 @@ img {
   text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
 }
 
+footer {
+  background-color: rgba(26, 26, 46, 0.95);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 4rem auto 2rem auto;
+  width: 150rem;
+  border-top: 1px solid rgba(139, 69, 19, 0.8);
+}
+
+.footer {
+  font-family: "Amarante", serif;
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  margin: 0.5rem 0;
+}
+
 /*# sourceMappingURL=style.css.map */
