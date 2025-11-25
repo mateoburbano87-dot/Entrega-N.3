@@ -1,0 +1,32 @@
+.seccion-comparacion h2{
+    font-size: 3.2rem;
+    color: var(--h2-color);
+    background: var(--h2-bg);
+    border-bottom: var(--h2-border);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    text-align: center;
+    text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+}
+
+.seccion-comparacion h3 {
+    font-size: 2.8rem;
+    color: var(--h3-color);
+    background: var(--h3-bg);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    text-align: center;
+    max-width: fit-content;
+}
+
+.seccion-comparacion p {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    text-align: justify;
+    margin: 1rem 3rem 3rem;
+}
