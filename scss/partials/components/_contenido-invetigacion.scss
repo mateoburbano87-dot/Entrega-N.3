@@ -1,0 +1,23 @@
+/*Estilos pagina Investigacion*/
+
+.p5{
+    font-size: 2.4rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    text-align: justify;
+    margin: 2rem auto;
+    width: 170rem;
+}
+
+.sub2{
+    font-size: 3.2rem;
+    color: var(--h2-color);
+    background: var(--h2-bg);
+    border-bottom: var(--h2-border);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 2rem auto 2rem auto;
+    width: 50rem;
+    text-align: center;
+    text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+}
