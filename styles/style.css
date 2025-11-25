@@ -683,4 +683,27 @@ img {
   padding: auto;
 }
 
+/*Estilos pagina Investigacion*/
+.p5 {
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 2rem auto;
+  width: 170rem;
+}
+
+.sub2 {
+  font-size: 3.2rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px solid #8b4513;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 2rem auto 2rem auto;
+  width: 50rem;
+  text-align: center;
+  text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+}
+
 /*# sourceMappingURL=style.css.map */
