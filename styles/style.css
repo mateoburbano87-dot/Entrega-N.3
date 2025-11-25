@@ -351,4 +351,48 @@ body {
   background-color: var(--table-row-hover);
 }
 
+/* Estilos pagina Patrones de Crimen */
+.intro-patrones {
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 2rem auto;
+  width: 170rem;
+}
+
+.tabla-patrones {
+  width: 170rem;
+  margin: 2rem auto 6rem auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.tabla-patrones th,
+.tabla-patrones td {
+  color: #e8e8e8;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tabla-patrones thead {
+  background: rgba(26, 26, 46, 0.9);
+  color: #cd7f32;
+}
+
+.tabla-patrones tbody tr:nth-child(even) { /* Filas pares */
+  background-color: rgba(26, 26, 46, 0.9);
+}
+
+.tabla-patrones tbody tr:nth-child(odd) { /* Filas impares */
+  background-color: rgba(26, 26, 46, 0.7);
+}
+
+.tabla-patrones tbody tr:hover {
+  background-color: rgba(139, 0, 0, 0.3);
+}
+
 /*# sourceMappingURL=style.css.map */
