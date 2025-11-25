@@ -1,0 +1,59 @@
+/*Estilos pagina archivos de la web*/
+
+.intro-tabla{
+    font-size: 2.4rem;
+    color: #8a8a8a;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 2rem auto;
+    width: 170rem;
+}
+
+/*Estilos tabla archivos*/
+
+.tabla-archivos {
+    width: 170rem;
+    margin: 2rem auto 6rem auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.titulo-tabla{
+    font-family: "Instrument Serif", serif;
+    font-size: 3.2rem;
+    color: #cd7f32;
+    background: rgba(26, 26, 46, 0.9);
+    border-bottom: 1px solid #8b4513;
+    padding: 1rem;
+    margin: 0 auto 2rem auto;
+    width: 170rem;
+    text-align: center;
+    text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+}
+
+.tabla-archivos th,
+.tabla-archivos td {
+    color: #e8e8e8;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.tabla-archivos thead {
+    background: rgba(26, 26, 46, 0.9);
+    color: #cd7f32;
+}
+
+.tabla-archivos tbody tr:nth-child(even) {
+    background-color: rgba(26, 26, 46, 0.8); 
+
+    &tbody tr:hover {
+        background-color: rgba(139, 0, 0, 0.3); 
+    }
+}
+
+.tabla-archivos tbody tr:nth-child(odd) {
+    background-color: var(--table-row-odd); 
+}
