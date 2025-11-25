@@ -10,17 +10,18 @@
 }
 
 .subtitulo{
-    font-size: 3.2rem;
-    color: #8a8a8a;
+    font-size: 3rem;
+    color: #cd7f32;
     background: rgba(26, 26, 46, 0.9);
     border-bottom: 1px solid #dcdcdc;
     border-radius: 2rem;
     padding: 1rem;
     margin: 2rem auto 2rem auto;
-    width: 50rem;
     text-align: center;
     text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
     align-content: center;
+    width: 50rem;
+    height: 8.5rem;
 }
 
 img{
@@ -34,11 +35,12 @@ img{
 .descripcion-img {
     font-family: "Amarante", serif;
     font-size: 1.8rem;
-    color: #8a8a8a;
+    color: #cd7f32;
     background-color: rgba(26, 26, 46, 0.9);
     text-align: center; 
     padding: 0.5rem; 
     margin-top: 1rem;
+    border-radius: 1rem;
 }
 
 .p4{
@@ -81,7 +83,7 @@ img{
 
 .bundy-container h3{
     font-size: 2.8rem;
-    color: #8a8a8a;
+    color: #cd7f32;
     background: rgba(139, 0, 0, 0.15);
     padding: 1rem;
     border-radius: 0.5rem;
