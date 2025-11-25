@@ -1,8 +1,8 @@
 .seccion-comparacion h2{
     font-size: 3.2rem;
-    color: var(--h2-color);
-    background: var(--h2-bg);
-    border-bottom: var(--h2-border);
+    color: #cd7f32;
+    background: rgba(26, 26, 46, 0.9);
+    border-bottom: 1px solid #8b4513;
     border-radius: 2rem;
     padding: 1rem;
     margin: 2rem auto;
@@ -25,7 +25,7 @@
 
 .seccion-comparacion p {
     font-size: 2rem;
-    color: var(--text-secondary);
+    color: #e8e8e8;
     line-height: 1.6;
     text-align: justify;
     margin: 1rem 3rem 3rem;
