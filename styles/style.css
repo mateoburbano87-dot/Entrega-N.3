@@ -428,4 +428,257 @@ body {
   margin: 1rem 3rem 3rem;
 }
 
+/* Estilos para la pagina expedientes */
+.intro-expedientes {
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 2rem auto;
+  width: 170rem;
+}
+
+.subtitulo {
+  font-size: 3.2rem;
+  color: #8a8a8a;
+  background: #f0f0f0;
+  border-bottom: 1px solid #dcdcdc;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 2rem auto 2rem auto;
+  width: 50rem;
+  text-align: center;
+  text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+  align-content: center;
+}
+
+img {
+  margin: 1rem auto;
+  border-radius: 2rem;
+  background-color: #f0f0f0;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion-img {
+  font-family: "Amarante", serif;
+  font-size: 1.8rem;
+  color: #8a8a8a;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.p4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 2.5rem;
+  text-align: justify;
+  line-height: 1.6;
+  color: #8a8a8a;
+  padding: 1rem;
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.p4-grid {
+  grid-column: span 2/span 2;
+  grid-column-start: 1;
+  grid-row-start: 4;
+  font-size: 2.8rem;
+  text-align: justify;
+  line-height: 1.6;
+  color: #8a8a8a;
+  padding: 1rem;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.subtitulo.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 2/span 2;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  margin: 2rem auto;
+}
+
+/* Estilos para el contenedor de Ted Bundy */
+.bundy-container h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.bundy-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows: 10rem 60rem 7rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contenedor-img-bundy {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-titulo-bundy {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  padding: auto;
+}
+
+/*Estilos para el coontenedor de Ed Gein */
+.gein-container h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.gein-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows: 10rem 60rem 7rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contenedor-img-gein {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-titulo-gein {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  padding: auto;
+}
+
+/* Estilos para el contenedor de Jeffrey Dahmer */
+.dahmer-container h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.dahmer-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows: 10rem 60rem 7rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contenedor-img-dahmer {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-titulo-dahmer {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  padding: auto;
+}
+
+/* Estilos para el contenedor de John Wayne Gacy */
+.gacy-container h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.gacy-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows: 10rem 60rem 7rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contenedor-img-gacy {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-titulo-gacy {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  padding: auto;
+}
+
+/* Estilos para el contenedor de Jack el Destripador */
+.jack-container h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.jack-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows: 10rem 60rem 7rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contenedor-img-jack {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-titulo-jack {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  padding: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
