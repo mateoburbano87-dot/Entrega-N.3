@@ -49,11 +49,11 @@
 .tabla-archivos tbody tr:nth-child(even) {
     background-color: rgba(26, 26, 46, 0.8); 
 
-    &tbody tr:nth-child(odd) {
-        background-color: rgba(26, 26, 46, 0.9); 
-    }
-
     &tbody tr:hover {
         background-color: rgba(139, 0, 0, 0.3); 
     }
+}
+
+.tabla-archivos tbody tr:nth-child(odd) {
+    background-color: var(--table-row-odd); 
 }
