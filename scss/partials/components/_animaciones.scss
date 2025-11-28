@@ -1,0 +1,417 @@
+/* Keyframes de animaciones */
+
+@keyframes desvanecido-abajo {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes desvanecido-escala {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes desvanecido-arriba {
+    from {
+        opacity: 0; 
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes escribir {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes parpadear {
+    from, to { border-color: transparent; }
+    50% { border-color: #cd7f32; }
+}
+
+@keyframes desvanecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes deslizar-derecha {
+    from { 
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes puslsar {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes desvanecer-arriba {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoom {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes deslizar-izquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes expandir-ancho {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes brillar {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+@keyframes desvanecer-izquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulso-suave {
+    0% { opacity: 1; }
+    50% { opacity: 0.9; }
+    100% { opacity: 1; }
+}
+
+@keyframes deslizar-abajo {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Animaciones globales*/
+
+/* Animación para la barra de navegación */
+.nav-bg {
+    animation: deslizar-abajo 1s ease-out;
+}
+
+/* Animación para los enlaces de navegación */
+.links-nav {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.links-nav::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #8b0000;
+    transition: width 0.3s ease;
+}
+
+.links-nav:hover::after {
+    width: 100%;
+}
+
+/* Animación para el footer */
+footer {
+    animation: desvanecido-arriba 1.5s ease-out;
+}
+
+/*Animaciones pagina lado oscuro*/
+
+h1 {
+    animation: desvanecido-abajo 1.5s ease-out;
+}
+
+/* Animación para la imagen de introducción */
+.img-intro {
+    animation: desvanecido-escala 2s ease-out;
+    transition: transform 0.3s ease;
+}
+
+.img-intro:hover {
+    transform: scale(1.02);
+}
+
+/* Animación para los artículos de características */
+.grid-perfil, .grid-metodos, .grid-seleccion, .grid-motivaciones {
+    animation: desvanecido-arriba 1s ease-out;
+    animation-fill-mode: both;
+}
+
+.grid-perfil {
+    animation-delay: 0.2s;
+}
+
+.grid-metodos {
+    animation-delay: 0.4s;
+}
+
+.grid-seleccion {
+    animation-delay: 0.6s;
+}
+
+.grid-motivaciones {
+    animation-delay: 0.8s;
+}
+
+/* Animación para los íconos de características */
+.icon-sub {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.grid-perfil:hover .icon-sub,
+.grid-metodos:hover .icon-sub,
+.grid-seleccion:hover .icon-sub,
+.grid-motivaciones:hover .icon-sub {
+    transform: rotate(15deg) scale(1.1);
+    color: #8b0000 !important;
+}
+
+/*Animaciones para pagina archivos de la web*/
+
+/* Animación para la tabla */
+.tabla-archivos {
+    animation: desvanecido 1.5s ease-out;
+}
+
+/* Animación para las filas de la tabla */
+.tabla-archivos tbody tr {
+    animation: deslizar-derecha 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.tabla-archivos tbody tr:nth-child(1) { animation-delay: 0.1s; }
+.tabla-archivos tbody tr:nth-child(2) { animation-delay: 0.2s; }
+.tabla-archivos tbody tr:nth-child(3) { animation-delay: 0.3s; }
+.tabla-archivos tbody tr:nth-child(4) { animation-delay: 0.4s; }
+.tabla-archivos tbody tr:nth-child(5) { animation-delay: 0.5s; }
+
+/* Efecto hover mejorado para las filas */
+.tabla-archivos tbody tr {
+    transition: all 0.3s ease;
+}
+
+.tabla-archivos tbody tr:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(139, 0, 0, 0.3);
+}
+
+/* Animación para el texto introductorio */
+.intro-tabla {
+    animation: escribir 3s steps(40, end), parpadeo 0.75s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #cd7f32;
+}
+
+/*Animaciones pagina patrones de crimen*/
+
+/* Animación para la tabla de patrones */
+.tabla-patrones {
+    animation: desvanecido-escala 1.5s ease-out;
+}
+
+/* Animación para las celdas de la tabla */
+.tabla-patrones td {
+    animation: pulso-suave 1s ease-out;
+    animation-fill-mode: both;
+}
+
+/* Animación escalonada para las filas */
+.tabla-patrones tbody tr:nth-child(1) td { animation-delay: 0.1s; }
+.tabla-patrones tbody tr:nth-child(2) td { animation-delay: 0.2s; }
+.tabla-patrones tbody tr:nth-child(3) td { animation-delay: 0.3s; }
+.tabla-patrones tbody tr:nth-child(4) td { animation-delay: 0.4s; }
+.tabla-patrones tbody tr:nth-child(5) td { animation-delay: 0.5s; }
+.tabla-patrones tbody tr:nth-child(6) td { animation-delay: 0.6s; }
+
+/* Efecto hover para celdas */
+.tabla-patrones td {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tabla-patrones td:hover {
+    background-color: rgba(139, 0, 0, 0.2) !important;
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.3);
+}
+
+/* Animación para las secciones de comparación */
+.seccion-comparacion h3 {
+    animation: deslizar-izquierda 1s ease-out;
+    animation-fill-mode: both;
+}
+
+.seccion-comparacion h3:nth-of-type(1) { animation-delay: 0.2s; }
+.seccion-comparacion h3:nth-of-type(2) { animation-delay: 0.4s; }
+.seccion-comparacion h3:nth-of-type(3) { animation-delay: 0.6s; }
+.seccion-comparacion h3:nth-of-type(4) { animation-delay: 0.8s; }
+
+.seccion-comparacion p {
+    animation: desvanecido 1.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.seccion-comparacion p:nth-of-type(1) { animation-delay: 0.3s; }
+.seccion-comparacion p:nth-of-type(2) { animation-delay: 0.5s; }
+.seccion-comparacion p:nth-of-type(3) { animation-delay: 0.7s; }
+.seccion-comparacion p:nth-of-type(4) { animation-delay: 0.9s; }
+
+/*Animaciones pagina expedientes*/
+
+/* Animación para las secciones de cada asesino */
+.bundy-container, .gein-container, .dahmer-container, .gacy-container, .jack-container {
+    animation: desvanecido-arriba 1.2s ease-out;
+    animation-fill-mode: both;
+}
+
+.bundy-container { animation-delay: 0.1s; }
+.gein-container { animation-delay: 0.3s; }
+.dahmer-container { animation-delay: 0.5s; }
+.gacy-container { animation-delay: 0.7s; }
+.jack-container { animation-delay: 0.9s; }
+
+/* Animación para las imágenes de perfil */
+.imagen-detalles {
+    animation: zoom 1.5s ease-out;
+    transition: all 0.4s ease;
+    filter: grayscale(30%);
+}
+
+.imagen-detalles:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(139, 0, 0, 0.4);
+}
+
+/* Animación para los títulos de sección */
+.grid-titulo-bundy, .grid-titulo-gein, .grid-titulo-dahmer, .grid-titulo-gacy, .grid-titulo-jack {
+    position: relative;
+    animation: deslizar-izquierda 1s ease-out;
+}
+
+.grid-titulo-bundy::after, .grid-titulo-gein::after, 
+.grid-titulo-dahmer::after, .grid-titulo-gacy::after, 
+.grid-titulo-jack::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #cd7f32, #8b0000);
+    animation: expandir-arriba 1.5s ease-out 0.5s forwards;
+}
+
+/* Animación para el texto de descripción */
+.p4, .p4-grid {
+    animation: desvanecido 1.8s ease-out;
+}
+
+/*Animaciones pagina investigacion*/
+
+/* Animación para los párrafos de investigación */
+.p5 {
+    animation: desvanecer-arriba 1.2s ease-out;
+    animation-fill-mode: both;
+}
+
+.p5:nth-of-type(1) { animation-delay: 0.2s; }
+.p5:nth-of-type(2) { animation-delay: 0.4s; }
+.p5:nth-of-type(3) { animation-delay: 0.6s; }
+.p5:nth-of-type(4) { animation-delay: 0.8s; }
+.p5:nth-of-type(5) { animation-delay: 1s; }
+
+/* Animación para los subtítulos */
+.sub2 {
+    position: relative;
+    animation: deslizar-derecha 1s ease-out;
+    overflow: hidden;
+}
+
+.sub2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(205, 127, 50, 0.2), transparent);
+    animation: brillo 2s ease-out 0.5s forwards;
+}
+
+/* Efecto de aparición secuencial para listas (si las agregas) */
+.lista-investigacion li {
+    animation: desvanecer-izquierda 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.lista-investigacion li:nth-child(1) { animation-delay: 0.1s; }
+.lista-investigacion li:nth-child(2) { animation-delay: 0.2s; }
+.lista-investigacion li:nth-child(3) { animation-delay: 0.3s; }
+.lista-investigacion li:nth-child(4) { animation-delay: 0.4s; }
+.lista-investigacion li:nth-child(5) { animation-delay: 0.5s; }
