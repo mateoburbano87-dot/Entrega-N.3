@@ -1205,4 +1205,254 @@ h1 {
     animation: brillo 2s ease-out 0.5s forwards;
 }
 
+/*media queries para diseño*/
+
+/* Tablets y pantallas medianas */
+
+@media (max-width: 1200px) {
+    
+  /* Ajustar contenedores principales */
+  .nav-bg, .intro-tabla, .titulo-tabla, 
+  .tabla-archivos, .intro-patrones, 
+  .tabla-patrones, .intro-expedientes, .p5 {
+    width: 95%;
+    max-width: 100%;
+  }
+  
+  /* Ajustar grid de características */
+  .grid-caracteristicas {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+  
+  /* Ajustar contenedor de introducción */
+  .container-intro {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  
+  .container-intro-img img {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Ajustar tablas*/
+  .tabla-archivos, .tabla-patrones {
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+  
+  /* Reducir tamaño de fuente en elementos grandes */
+  h1 {
+    font-size: 3rem;
+    margin: 2rem 2rem;
+  }
+  
+  .intro, .inicio, .intro-tabla, .intro-patrones, .intro-expedientes, .p5 {
+    font-size: 2rem;
+  }
+}
+
+/* Tablets en orientación vertical */
+@media (max-width: 992px) {
+
+  /* Ajustar navegación */
+  .nav-bg {
+    width: 95%;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-bg a {
+    font-size: 2.2rem;
+  }
+  
+  .icon-nav {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  
+  /* Ajustar grids de expedientes */
+  .bundy-container, .gein-container, 
+  .dahmer-container, .gacy-container, 
+  .jack-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+  
+  .contenedor-img-bundy, .contenedor-img-gein,
+  .contenedor-img-dahmer, .contenedor-img-gacy,
+  .contenedor-img-jack {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  
+  .p4 {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  
+  .p4-grid {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  
+  /* Ajustar imágenes */
+  .imagen-detalles {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Reducir tamaño de fuente */
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2, .subtitulo {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+  
+  .sub2 {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+}
+
+/* Dispositivos móviles grandes */
+
+@media (max-width: 768px) {
+
+  /* Ajustar navegación para móviles */
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .nav-li {
+    margin: 0.5rem 0;
+  }
+  
+  .links-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+  
+  /* Ajustar tablas para móviles */
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  th, td {
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+  
+  /* Ajustar footer */
+  footer {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  
+  .footer {
+    font-size: 1.8rem;
+  }
+  
+  /* Reducir animaciones para mejor rendimiento */
+  .imagen-detalles:hover {
+    transform: scale(1.01);
+  }
+  
+  
+  h1 {
+    font-size: 2.2rem;
+    margin: 1.5rem 1rem;
+    padding: 1.5rem;
+  }
+  
+  .intro, .inicio, .intro-tabla, .intro-patrones, 
+  .intro-expedientes, .p5, .p4, .p4-grid {
+    font-size: 1.8rem;
+  }
+  
+  .grid-perfil p, .grid-metodos p, 
+  .grid-seleccion p, .grid-motivaciones p {
+    font-size: 1.8rem;
+  }
+}
+
+/* Dispositivos móviles pequeños */
+
+@media (max-width: 576px) {
+
+  /* Ajustes finales para móviles pequeños */
+
+  body {
+    padding: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+  }
+  
+  h2, .subtitulo, .sub2 {
+    font-size: 2rem;
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 0.8rem;
+  }
+  
+  /* Ajustar textos */
+  .intro, .inicio, .intro-tabla, .intro-patrones, 
+  .intro-expedientes, .p5, .p4, .p4-grid,
+  .grid-perfil p, .grid-metodos p, 
+  .grid-seleccion p, .grid-motivaciones p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  
+  /* Ajustar tablas */
+  th, td {
+    padding: 0.8rem;
+    font-size: 1.4rem;
+  }
+  
+  /* Optimizar espacios en grids */
+  .grid-caracteristicas {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .grid-perfil, .grid-metodos, 
+  .grid-seleccion, .grid-motivaciones {
+    padding: 1.5rem;
+  }
+  
+  /* Ajustar iconos */
+  .icon-nav {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .icon-sub {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  /* Reducir animaciones para máximo rendimiento */
+  * {
+    animation-duration: 0.5s !important;
+  }
+}
+
+
 /*# sourceMappingURL=style.css.map */
