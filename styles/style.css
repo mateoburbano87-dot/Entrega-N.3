@@ -1205,254 +1205,440 @@ h1 {
     animation: brillo 2s ease-out 0.5s forwards;
 }
 
-/*media queries para diseño*/
+/*Media Queries para responsividad */
 
-/* Tablets y pantallas medianas */
-
-@media (max-width: 1200px) {
+/*Tablets grandes (1025px - 1200px)  */
+@media screen and (max-width: 1200px) {
+    .nav-bg,
+    footer,
+    .intro-tabla,
+    .intro-patrones,
+    .intro-expedientes,
+    .p5,
+    .tabla-archivos,
+    .tabla-patrones,
+    .titulo-tabla {
+        width: 95%;
+    }
     
-  /* Ajustar contenedores principales */
-  .nav-bg, .intro-tabla, .titulo-tabla, 
-  .tabla-archivos, .intro-patrones, 
-  .tabla-patrones, .intro-expedientes, .p5 {
-    width: 95%;
-    max-width: 100%;
-  }
-  
-  /* Ajustar grid de características */
-  .grid-caracteristicas {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 2rem;
-  }
-  
-  /* Ajustar contenedor de introducción */
-  .container-intro {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 2rem;
-    padding: 0 2rem;
-  }
-  
-  .container-intro-img img {
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  /* Ajustar tablas*/
-  .tabla-archivos, .tabla-patrones {
-    overflow-x: auto;
-    display: block;
-    white-space: nowrap;
-  }
-  
-  /* Reducir tamaño de fuente en elementos grandes */
-  h1 {
-    font-size: 3rem;
-    margin: 2rem 2rem;
-  }
-  
-  .intro, .inicio, .intro-tabla, .intro-patrones, .intro-expedientes, .p5 {
-    font-size: 2rem;
-  }
+    .container-intro {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+    }
+    
+    .container-intro-img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .inicio {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .intro {
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+    
+    .bundy-container,
+    .gein-container,
+    .dahmer-container,
+    .gacy-container,
+    .jack-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 1.5rem;
+    }
+    
+    .contenedor-img-bundy,
+    .contenedor-img-gein,
+    .contenedor-img-dahmer,
+    .contenedor-img-gacy,
+    .contenedor-img-jack {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .p4 {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 2rem;
+    }
+    
+    .subtitulo-grid {
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+    
+    .p4-grid {
+        grid-column: 1 / 3;
+        grid-row: 4;
+    }
 }
 
-/* Tablets en orientación vertical */
-@media (max-width: 992px) {
+/*Tablets (768px - 1024px)*/
+@media screen and (max-width: 1024px) {
+    /* Ajustar el ancho máximo de contenedores principales */
+    .nav-bg,
+    footer {
+        width: 95%;
+        margin: 0 auto;
+    }
 
-  /* Ajustar navegación */
-  .nav-bg {
-    width: 95%;
-    padding: 0.5rem 1rem;
-  }
-  
-  .nav-bg a {
-    font-size: 2.2rem;
-  }
-  
-  .icon-nav {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-  
-  /* Ajustar grids de expedientes */
-  .bundy-container, .gein-container, 
-  .dahmer-container, .gacy-container, 
-  .jack-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 1.5rem;
-    padding: 0 2rem;
-  }
-  
-  .contenedor-img-bundy, .contenedor-img-gein,
-  .contenedor-img-dahmer, .contenedor-img-gacy,
-  .contenedor-img-jack {
-    grid-column: 1;
-    grid-row: auto;
-  }
-  
-  .p4 {
-    grid-column: 1;
-    grid-row: auto;
-  }
-  
-  .p4-grid {
-    grid-column: 1;
-    grid-row: auto;
-  }
-  
-  /* Ajustar imágenes */
-  .imagen-detalles {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Reducir tamaño de fuente */
-  h1 {
-    font-size: 2.5rem;
-  }
-  
-  h2, .subtitulo {
-    font-size: 2.5rem;
-    width: 90%;
-  }
-  
-  .sub2 {
-    font-size: 2.5rem;
-    width: 90%;
-  }
+    /* Reducir tamaño de títulos principales */
+    h1 {
+        font-size: 3rem;
+        margin: 2rem 2rem;
+        padding: 1.5rem;
+    }
+
+    .subtitulo,
+    .sub2,
+    .titulo-tabla {
+        font-size: 2.8rem;
+        width: 80%;
+    }
+
+    /* Ajustar grid de características */
+    .grid-caracteristicas {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 90%;
+    }
+
+    /* Ajustar contenedor introductorio */
+    .container-intro {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 2rem;
+        margin: 2rem auto;
+    }
+
+    .container-intro-img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .inicio {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .intro {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    /* Ajustar tablas */
+    .intro-tabla,
+    .intro-patrones,
+    .intro-expedientes,
+    .p5,
+    .tabla-archivos,
+    .tabla-patrones,
+    .titulo-tabla {
+        width: 95%;
+        font-size: 2rem;
+    }
+
+    /* Ajustar contenedores de expedientes */
+    .bundy-container,
+    .gein-container,
+    .dahmer-container,
+    .gacy-container,
+    .jack-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 1rem;
+    }
+
+    .contenedor-img-bundy,
+    .contenedor-img-gein,
+    .contenedor-img-dahmer,
+    .contenedor-img-gacy,
+    .contenedor-img-jack {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .p4 {
+        grid-column: 1;
+        grid-row: 3;
+        font-size: 2rem;
+    }
+
+    .subtitulo-grid {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .p4-grid {
+        grid-column: 1;
+        grid-row: 5;
+        font-size: 2.2rem;
+    }
+
+    /* Ajustar sección comparación */
+    .seccion-comparacion h2 {
+        width: 80%;
+    }
+
+    .seccion-comparacion h3 {
+        margin-left: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .seccion-comparacion p {
+        margin: 1rem 1rem 2rem;
+    }
 }
 
-/* Dispositivos móviles grandes */
+/* Celulares grandes (576px - 767px) =*/
+@media screen and (max-width: 767px) {
 
-@media (max-width: 768px) {
+    .nav-bg { /* Ajustar navbar y conservar la funcionalidad de bootstrap */
+        width: 98%;
+        padding: 0.5rem 1rem;
+    }
 
-  /* Ajustar navegación para móviles */
-  .navbar-nav {
-    text-align: center;
-  }
-  
-  .nav-li {
-    margin: 0.5rem 0;
-  }
-  
-  .links-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0.5rem 0;
-  }
-  
-  /* Ajustar tablas para móviles */
-  table {
-    display: block;
-    overflow-x: auto;
-  }
-  
-  th, td {
-    padding: 1rem;
-    font-size: 1.6rem;
-  }
-  
-  /* Ajustar footer */
-  footer {
-    width: 95%;
-    padding: 1.5rem;
-  }
-  
-  .footer {
-    font-size: 1.8rem;
-  }
-  
-  /* Reducir animaciones para mejor rendimiento */
-  .imagen-detalles:hover {
-    transform: scale(1.01);
-  }
-  
-  
-  h1 {
-    font-size: 2.2rem;
-    margin: 1.5rem 1rem;
-    padding: 1.5rem;
-  }
-  
-  .intro, .inicio, .intro-tabla, .intro-patrones, 
-  .intro-expedientes, .p5, .p4, .p4-grid {
-    font-size: 1.8rem;
-  }
-  
-  .grid-perfil p, .grid-metodos p, 
-  .grid-seleccion p, .grid-motivaciones p {
-    font-size: 1.8rem;
-  }
+    .nav-bg a {
+        font-size: 2.2rem;
+    }
+
+    .icon-nav {
+        width: 3rem;
+        height: 3rem;
+        margin: auto 0.5rem;
+    }
+
+    /* Reducir aún más títulos */
+    h1 {
+        font-size: 2.5rem;
+        margin: 1.5rem 1rem;
+        padding: 1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .subtitulo,
+    .sub2,
+    .titulo-tabla {
+        font-size: 2.4rem;
+        width: 90%;
+        padding: 0.8rem;
+    }
+
+    /* Ajustar grids */
+    .grid-caracteristicas {
+        max-width: 95%;
+        gap: 1rem;
+    }
+
+    .grid-perfil,
+    .grid-metodos,
+    .grid-seleccion,
+    .grid-motivaciones {
+        padding: 1.5rem;
+    }
+
+    .grid-perfil h3,
+    .grid-metodos h3,
+    .grid-seleccion h3,
+    .grid-motivaciones h3 {
+        font-size: 2.2rem;
+        padding: 0.8rem;
+    }
+
+    .grid-perfil p,
+    .grid-metodos p,
+    .grid-seleccion p,
+    .grid-motivaciones p {
+        font-size: 1.8rem;
+    }
+
+    /* Ajustar texto general */
+    .intro,
+    .inicio,
+    .intro-tabla,
+    .intro-patrones,
+    .intro-expedientes,
+    .p5,
+    .p4,
+    .p4-grid {
+        font-size: 1.8rem;
+        width: 95%;
+    }
+
+    /* Ajustar imágenes */
+    .container-intro-img img {
+        width: 95%;
+    }
+
+    .imagen-detalles {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajustar tablas para scroll horizontal */
+    .tabla-archivos,
+    .tabla-patrones {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .tabla-archivos table,
+    .tabla-patrones table {
+        min-width: 800px;
+    }
+
+    .tabla-archivos th,
+    .tabla-archivos td,
+    .tabla-patrones th,
+    .tabla-patrones td {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+
+    /* Ajustar sección comparación */
+    .seccion-comparacion h2 {
+        width: 90%;
+        font-size: 2.4rem;
+    }
+
+    .seccion-comparacion h3 {
+        font-size: 2.2rem;
+    }
+
+    .seccion-comparacion p {
+        font-size: 1.8rem;
+        margin: 1rem 0.5rem 1.5rem;
+    }
+
+    /* Ajustar footer */
+    footer {
+        width: 98%;
+        padding: 1.5rem 0.5rem;
+    }
+
+    .footer {
+        font-size: 1.6rem;
+    }
 }
 
-/* Dispositivos móviles pequeños */
+/* Celulares pequeños (320px - 575px) */
+@media screen and (max-width: 575px) {
+    .nav-bg a {
+        font-size: 1.8rem;
+    }
 
-@media (max-width: 576px) {
+    .icon-nav {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 
-  /* Ajustes finales para móviles pequeños */
+    h1 {
+        font-size: 2rem;
+        margin: 1rem 0.5rem;
+        padding: 0.8rem;
+        letter-spacing: 0.05rem;
+    }
 
-  body {
-    padding: 0 1rem;
-  }
-  
-  h1 {
-    font-size: 1.8rem;
-    margin: 1rem 0.5rem;
-    padding: 1rem;
-  }
-  
-  h2, .subtitulo, .sub2 {
-    font-size: 2rem;
-    width: 100%;
-    margin: 1.5rem 0;
-    padding: 0.8rem;
-  }
-  
-  /* Ajustar textos */
-  .intro, .inicio, .intro-tabla, .intro-patrones, 
-  .intro-expedientes, .p5, .p4, .p4-grid,
-  .grid-perfil p, .grid-metodos p, 
-  .grid-seleccion p, .grid-motivaciones p {
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
-  
-  /* Ajustar tablas */
-  th, td {
-    padding: 0.8rem;
-    font-size: 1.4rem;
-  }
-  
-  /* Optimizar espacios en grids */
-  .grid-caracteristicas {
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-  
-  .grid-perfil, .grid-metodos, 
-  .grid-seleccion, .grid-motivaciones {
-    padding: 1.5rem;
-  }
-  
-  /* Ajustar iconos */
-  .icon-nav {
-    width: 3rem;
-    height: 3rem;
-  }
-  
-  .icon-sub {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  
-  /* Reducir animaciones para máximo rendimiento */
-  * {
-    animation-duration: 0.5s !important;
-  }
+    .subtitulo,
+    .sub2,
+    .titulo-tabla {
+        font-size: 2rem;
+        width: 95%;
+        padding: 0.6rem;
+    }
+
+    /* Reducir aún más el texto */
+    .intro,
+    .inicio,
+    .intro-tabla,
+    .intro-patrones,
+    .intro-expedientes,
+    .p5,
+    .p4,
+    .p4-grid,
+    .grid-perfil p,
+    .grid-metodos p,
+    .grid-seleccion p,
+    .grid-motivaciones p,
+    .seccion-comparacion p {
+        font-size: 1.6rem;
+    }
+
+    .grid-perfil h3,
+    .grid-metodos h3,
+    .grid-seleccion h3,
+    .grid-motivaciones h3,
+    .seccion-comparacion h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Ajustar iconos pequeños */
+    .icon-sub {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    /* Ajustar tablas para pantallas muy pequeñas */
+    .tabla-archivos th,
+    .tabla-archivos td,
+    .tabla-patrones th,
+    .tabla-patrones td {
+        font-size: 1.4rem;
+        padding: 0.8rem;
+    }
+
+    .tabla-archivos table,
+    .tabla-patrones table { 
+        min-width: 700px;
+    }
+
+    /* Ajustar footer */
+    .footer {
+        font-size: 1.4rem;
+    }
 }
+
+/*Orientacion horizontal en celulares*/
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    /* Ajustes específicos para orientación horizontal */
+    .container-intro {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .container-intro-img {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    .inicio {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .intro {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* Reducir altura de secciones para evitar scroll excesivo */
+    .bundy-container,
+    .gein-container,
+    .dahmer-container,
+    .gacy-container,
+    .jack-container {
+        grid-template-rows: auto auto auto auto; /* Ajustar filas para mejor uso del espacio */
+    }
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
