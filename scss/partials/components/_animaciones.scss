@@ -155,7 +155,7 @@
 }
 
 .links-nav::after {
-    content: '';
+    content: ''; /* Línea inferior */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -174,7 +174,7 @@ footer {
     animation: aparecer-abajo 1.5s ease-out;
 }
 
-/*Animaciones pagina lado oscuro*/
+/*Animaciones para pagina lado oscuro*/
 
 h1 {
     animation: aparecer-arriba 1.5s ease-out;
@@ -190,7 +190,7 @@ h1 {
     transform: scale(1.02);
 }
 
-/* Animación para los artículos de características */
+/* Animación para grid de características */
 .grid-perfil, .grid-metodos, .grid-seleccion, .grid-motivaciones {
     animation: deslizar-abajo 1s ease-out;
     animation-fill-mode: both;
@@ -225,7 +225,7 @@ h1 {
     color: #8b0000 !important;
 }
 
-/*Animaciones para pagina archivos de la web*/
+/*Animaciones para pagina archivos criminales*/
 
 /* Animación para la tabla */
 .tabla-archivos {
@@ -235,14 +235,8 @@ h1 {
 /* Animación para las filas de la tabla */
 .tabla-archivos tbody tr {
     animation: deslizar-derecha 0.8s ease-out;
-    animation-fill-mode: both;
+    animation-fill-mode: both; 
 }
-
-.tabla-archivos tbody tr:nth-child(1) { animation-delay: 0.1s; }
-.tabla-archivos tbody tr:nth-child(2) { animation-delay: 0.2s; }
-.tabla-archivos tbody tr:nth-child(3) { animation-delay: 0.3s; }
-.tabla-archivos tbody tr:nth-child(4) { animation-delay: 0.4s; }
-.tabla-archivos tbody tr:nth-child(5) { animation-delay: 0.5s; }
 
 /* Efecto hover mejorado para las filas */
 .tabla-archivos tbody tr {
@@ -254,7 +248,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(139, 0, 0, 0.3);
 }
 
-/*Animaciones pagina patrones de crimen*/
+/*Animaciones pagina patrones en la sombra*/
 
 /* Animación para la tabla de patrones */
 .tabla-patrones {
@@ -266,14 +260,6 @@ h1 {
     animation: pulso-suave 1s ease-out;
     animation-fill-mode: both;
 }
-
-/* Animación escalonada para las filas */
-.tabla-patrones tbody tr:nth-child(1) td { animation-delay: 0.1s; }
-.tabla-patrones tbody tr:nth-child(2) td { animation-delay: 0.2s; }
-.tabla-patrones tbody tr:nth-child(3) td { animation-delay: 0.3s; }
-.tabla-patrones tbody tr:nth-child(4) td { animation-delay: 0.4s; }
-.tabla-patrones tbody tr:nth-child(5) td { animation-delay: 0.5s; }
-.tabla-patrones tbody tr:nth-child(6) td { animation-delay: 0.6s; }
 
 /* Efecto hover para celdas */
 .tabla-patrones td {
@@ -294,22 +280,22 @@ h1 {
     animation-fill-mode: both;
 }
 
-.seccion-comparacion h3:nth-of-type(1) { animation-delay: 0.2s; }
-.seccion-comparacion h3:nth-of-type(2) { animation-delay: 0.4s; }
-.seccion-comparacion h3:nth-of-type(3) { animation-delay: 0.6s; }
-.seccion-comparacion h3:nth-of-type(4) { animation-delay: 0.8s; }
+.seccion-comparacion h3:nth-of-type(1) { animation-delay: 1s; }
+.seccion-comparacion h3:nth-of-type(2) { animation-delay: 2s; }
+.seccion-comparacion h3:nth-of-type(3) { animation-delay: 3s; }
+.seccion-comparacion h3:nth-of-type(4) { animation-delay: 4s; }
 
 .seccion-comparacion p {
     animation: aparecer 1.5s ease-out;
     animation-fill-mode: both;
 }
 
-.seccion-comparacion p:nth-of-type(1) { animation-delay: 0.3s; }
-.seccion-comparacion p:nth-of-type(2) { animation-delay: 0.5s; }
-.seccion-comparacion p:nth-of-type(3) { animation-delay: 0.7s; }
-.seccion-comparacion p:nth-of-type(4) { animation-delay: 0.9s; }
+.seccion-comparacion p:nth-of-type(1) { animation-delay: 1s; }
+.seccion-comparacion p:nth-of-type(2) { animation-delay: 2s; }
+.seccion-comparacion p:nth-of-type(3) { animation-delay: 3s; }
+.seccion-comparacion p:nth-of-type(4) { animation-delay: 4s; }
 
-/*Animaciones pagina expedientes*/
+/*Animaciones pagina expedientes secretos*/
 
 /* Animación para las secciones de cada asesino */
 .bundy-container, .gein-container, .dahmer-container, .gacy-container, .jack-container {
@@ -317,16 +303,16 @@ h1 {
     animation-fill-mode: both;
 }
 
-.bundy-container { animation-delay: 0.1s; }
-.gein-container { animation-delay: 0.3s; }
-.dahmer-container { animation-delay: 0.5s; }
-.gacy-container { animation-delay: 0.7s; }
-.jack-container { animation-delay: 0.9s; }
+.bundy-container { animation-delay: 1s; }
+.gein-container { animation-delay: 2s; }
+.dahmer-container { animation-delay: 3s; }
+.gacy-container { animation-delay: 4s; }
+.jack-container { animation-delay: 5s; }
 
 /* Animación para las imágenes de perfil */
 .imagen-detalles {
     animation: zoom 1.5s ease-out;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
     filter: grayscale(30%);
 }
 
@@ -342,19 +328,6 @@ h1 {
     animation: deslizar-izquierda 1s ease-out;
 }
 
-.grid-titulo-bundy::after, .grid-titulo-gein::after, 
-.grid-titulo-dahmer::after, .grid-titulo-gacy::after, 
-.grid-titulo-jack::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #cd7f32, #8b0000);
-    animation: expandir-ancho 1.5s ease-out 0.5s forwards;
-}
-
 /* Animación para el texto de descripción */
 .p4, .p4-grid {
     animation: aparecer 1.8s ease-out;
@@ -368,11 +341,11 @@ h1 {
     animation-fill-mode: both;
 }
 
-.p5:nth-of-type(1) { animation-delay: 0.2s; }
-.p5:nth-of-type(2) { animation-delay: 0.4s; }
-.p5:nth-of-type(3) { animation-delay: 0.6s; }
-.p5:nth-of-type(4) { animation-delay: 0.8s; }
-.p5:nth-of-type(5) { animation-delay: 1s; }
+.p5:nth-of-type(1) { animation-delay: 1s; } 
+.p5:nth-of-type(2) { animation-delay: 2s; }
+.p5:nth-of-type(3) { animation-delay: 3s; }
+.p5:nth-of-type(4) { animation-delay: 4s; }
+.p5:nth-of-type(5) { animation-delay: 5s; }
 
 /* Animación para los subtítulos */
 .sub2 {
@@ -391,16 +364,3 @@ h1 {
     background: linear-gradient(90deg, transparent, rgba(205, 127, 50, 0.2), transparent);
     animation: brillo 2s ease-out 0.5s forwards;
 }
-
-/* Efecto de aparición secuencial para listas (si las agregas) */
-.lista-investigacion li {
-    animation: aparecer-izquierda 0.8s ease-out;
-    animation-fill-mode: both;
-}
-
-.lista-investigacion li:nth-child(1) { animation-delay: 0.1s; }
-.lista-investigacion li:nth-child(2) { animation-delay: 0.2s; }
-.lista-investigacion li:nth-child(3) { animation-delay: 0.3s; }
-.lista-investigacion li:nth-child(4) { animation-delay: 0.4s; }
-.lista-investigacion li:nth-child(5) { animation-delay: 0.5s; }
-
