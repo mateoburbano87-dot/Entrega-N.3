@@ -1,16 +1,8 @@
-/* Variables de puntos de quiebre */
-
-$tablet-grande: 1200px;
-$tablet: 992px;
-$movil-grande: 768px;
-$movil-pequeno: 576px;
-$horizontal: 500px;
-
-/*media queries para diseño responsivo */
+/*media queries para diseño*/
 
 /* Tablets y pantallas medianas */
 
-@media (max-width: $tablet-grande) {
+@media (max-width: 1200px) {
     
   /* Ajustar contenedores principales */
   .nav-bg, .intro-tabla, .titulo-tabla, 
@@ -59,7 +51,7 @@ $horizontal: 500px;
 }
 
 /* Tablets en orientación vertical */
-@media (max-width: $tablet) {
+@media (max-width: 992px) {
 
   /* Ajustar navegación */
   .nav-bg {
@@ -127,7 +119,7 @@ $horizontal: 500px;
 
 /* Dispositivos móviles grandes */
 
-@media (max-width: $movil-grande) {
+@media (max-width: 768px) {
 
   /* Ajustar navegación para móviles */
   .navbar-nav {
@@ -191,7 +183,7 @@ $horizontal: 500px;
 
 /* Dispositivos móviles pequeños */
 
-@media (max-width: $movil-pequeno) {
+@media (max-width: 576px) {
 
   /* Ajustes finales para móviles pequeños */
 
