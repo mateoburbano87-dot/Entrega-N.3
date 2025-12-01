@@ -144,14 +144,11 @@
 /*Animaciones globales*/
 
 /* Animación para la barra de navegación */
-.nav-bg {
-    animation: deslizar-arriba 1s ease-out;
-}
 
 /* Animación para los enlaces de navegación */
 .links-nav {
     position: relative;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .links-nav::after {
@@ -162,7 +159,7 @@
     width: 0;
     height: 2px;
     background: #8b0000;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease;
 }
 
 .links-nav:hover::after {
@@ -229,7 +226,7 @@ h1 {
 
 /* Animación para la tabla */
 .tabla-archivos {
-    animation: aparecer 1.5s ease-out;
+    animation: aparecer 5s ease-out;
 }
 
 /* Animación para las filas de la tabla */
@@ -240,11 +237,11 @@ h1 {
 
 /* Efecto hover mejorado para las filas */
 .tabla-archivos tbody tr {
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 }
 
 .tabla-archivos tbody tr:hover {
-    transform: translateX(5px);
+    transform: translateX(5px); 
     box-shadow: 0 4px 8px rgba(139, 0, 0, 0.3);
 }
 
