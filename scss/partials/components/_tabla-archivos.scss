@@ -1,8 +1,8 @@
-/*Estilos pagina archivos de la web*/
+/*Estilos pagina archivos*/
 
 .intro-tabla{
-    font-size: 2.4rem;
-    color: #8a8a8a;
+    font-size: variables.$font-intro-tabla;
+    color: variables.$color-p;
     line-height: 1.6;
     text-align: justify;
     margin: 2rem auto;
@@ -21,9 +21,9 @@
 }
 
 .titulo-tabla{
-    font-family: "Instrument Serif", serif;
-    font-size: 3.2rem;
-    color: #cd7f32;
+    font-family: variables.$font-titulo-tabla;
+    font-size: variables.$size-titulo-tabla;
+    color: variables.$color-titulo-tabla;
     background: rgba(26, 26, 46, 0.9);
     border-bottom: 1px solid #8b4513;
     padding: 1rem;
@@ -35,14 +35,15 @@
 
 .tabla-archivos th,
 .tabla-archivos td {
-    color: #e8e8e8;
+    font-family: variables.$font-tabla;
+    color: variables.$color-p-tabla;
     padding: 1.5rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: variables.$size-p-tabla;
 }
 
 .tabla-archivos thead {
-    background: rgba(26, 26, 46, 0.9);
+    background: variables.$bg-thead-tabla;
     color: #cd7f32;
 }
 
@@ -50,10 +51,3 @@
     background-color: rgba(26, 26, 46, 0.8); 
 }
 
-.tabla-archivos tbody tr:nth-child(odd) {
-    background-color: var(--table-row-odd); 
-}
-
-.tabla-archivos tbody tr:hover {
-    background-color: var(--table-row-hover); 
-}

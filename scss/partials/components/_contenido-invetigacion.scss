@@ -2,7 +2,7 @@
 
 .p5{
     font-size: 2.4rem;
-    color: #8a8a8a;
+    color: variables.$color-p;
     line-height: 1.6;
     text-align: justify;
     margin: 2rem auto;
@@ -11,8 +11,8 @@
 
 .sub2{
     font-size: 3.2rem;
-    color: #cd7f32;
-    background: rgba(26, 26, 46, 0.9);
+    color: variables.$color-h2;
+    background: variables.$bg-h2-color;
     border-bottom: 1px solid #8b4513;
     border-radius: 2rem;
     padding: 1rem;

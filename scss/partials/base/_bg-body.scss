@@ -1,6 +1,8 @@
+@use "../../utilities/variables";
+
 /*Estilo del fondo de la página*/
 body {
-  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 25%, #16213e 50%, #2d0000 75%, #0a0a0f 100%);
+  background: variables.$bg-body-color;
   background-attachment: fixed; /* Fijo para efecto parallax */
   background-size: cover, 200px 200px, cover; /* Ajuste del tamaño del fondo */
   min-height: 100vh; /* Asegurar que el fondo cubra toda la altura de la ventana */

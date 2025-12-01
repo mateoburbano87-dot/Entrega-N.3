@@ -1,8 +1,8 @@
 /* Estilos pagina Patrones de Crimen */
 
 .intro-patrones{
-    font-size: 2.4rem;
-    color: #8a8a8a;
+    font-size: variables.$size-intro-tabla;
+    color: variables.$color-p-tabla;
     line-height: 1.6;
     text-align: justify;
     margin: 2rem auto;
@@ -20,23 +20,16 @@
 
 .tabla-patrones th,
 .tabla-patrones td {
-    color: #e8e8e8;
+    font-family: variables.$font-tabla;
+    color: variables.$color-p-tabla;
     padding: 1.5rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: variables.$size-p-tabla;
 }
 
 .tabla-patrones thead {
-    background: rgba(26, 26, 46, 0.9);
-    color: #cd7f32;
-}
-
-.tabla-patrones tbody tr:nth-child(even) { /* Filas pares */
-    background-color: rgba(26, 26, 46, 0.9); 
-}
-
-.tabla-patrones tbody tr:nth-child(odd) { /* Filas impares */
-    background-color: rgba(26, 26, 46, 0.7); 
+    background: variables.$bg-thead-tabla;
+    color: variables.$color-titulo-tabla;
 }
 
 .tabla-patrones tbody tr:hover {

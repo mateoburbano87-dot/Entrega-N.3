@@ -1,8 +1,8 @@
 /* Estilos para la pagina expedientes */
 
 .intro-expedientes{
-    font-size: 2.4rem;
-    color: #8a8a8a;
+    font-size: variables.$size-intro-expedientes;
+    color: variables.$color-p;
     line-height: 1.6;
     text-align: justify;
     margin: 2rem auto;
@@ -11,8 +11,8 @@
 
 .subtitulo{
     font-size: 3rem;
-    color: #cd7f32;
-    background: rgba(26, 26, 46, 0.9);
+    color: variables.$color-h2;
+    background: variables.$bg-h2-color;
     border-bottom: 1px solid #dcdcdc;
     border-radius: 2rem;
     padding: 1rem;
@@ -27,16 +27,16 @@
 img{
     margin: 1rem auto;
     border-radius: 2rem;
-    background-color: rgba(26, 26, 46, 0.9);
+    background-color: variables.$bg-h2-color;
     border: 1px solid #dcdcdc;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .descripcion-img {
-    font-family: "Amarante", serif;
-    font-size: 1.8rem;
-    color: #cd7f32;
-    background-color: rgba(26, 26, 46, 0.9);
+    font-family: variables.$font-p;
+    font-size: variables.$size-img-descrip;
+    color: variables.$color-h2;
+    background-color: variables.$bg-h2-color;
     text-align: center; 
     padding: 0.5rem; 
     margin-top: 1rem;
@@ -49,7 +49,7 @@ img{
     font-size: 2.5rem;
     text-align: justify;
     line-height: 1.6;
-    color: #8a8a8a;
+    color: variables.$color-p;
     padding: 1rem;
     max-width: 100rem; 
     width: 100%; 
@@ -60,10 +60,10 @@ img{
     grid-column: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 4;
-    font-size: 2.8rem;
+    font-size: variables.$size-p-grid-expedientes;
     text-align: justify;
     line-height: 1.6;
-    color: #8a8a8a;
+    color: variables.$color-p;
     padding: 1rem;
     width: 100%; 
     margin: 2rem auto;
@@ -82,9 +82,9 @@ img{
 /* Estilos para el contenedor de Ted Bundy */
 
 .bundy-container h3{
-    font-size: 2.8rem;
-    color: #8a8a8a;
-    background: rgba(139, 0, 0, 0.15);
+    font-size: variables.$size-h3-grid;
+    color: variables.$color-p;
+    background: variables.$bg-h3;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -118,9 +118,9 @@ img{
 /*Estilos para el coontenedor de Ed Gein */
 
 .gein-container h3{
-    font-size: 2.8rem;
-    color: #8a8a8a;
-    background: rgba(139, 0, 0, 0.15);
+    font-size: varaibles.$size-h3-grid;
+    color: variables.$color-p;
+    background: variables.$bg-h3;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -154,9 +154,9 @@ img{
 /* Estilos para el contenedor de Jeffrey Dahmer */
 
 .dahmer-container h3{
-    font-size: 2.8rem;
-    color: #8a8a8a;
-    background: rgba(26, 26, 46, 0.9);
+    font-size: variables.$size-h3-grid;
+    color: variables.$color-p;
+    background: variables.$bg-h2-color;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -190,9 +190,9 @@ img{
 /* Estilos para el contenedor de John Wayne Gacy */
 
 .gacy-container h3{
-    font-size: 2.8rem;
-    color: #8a8a8a;
-    background: rgba(139, 0, 0, 0.15);
+    font-size: variables.$size-h3-grid;
+    color: variables.$color-p;
+    background: variables.$bg-h3;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -227,8 +227,8 @@ img{
 
 .jack-container h3{
     font-size: 2.8rem;
-    color: #8a8a8a;
-    background: rgba(139, 0, 0, 0.15);
+    color: variables.$color-p;
+    background: variables.$bg-h3;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;

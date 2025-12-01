@@ -1,3 +1,8 @@
+@use "../../utilities/variables";
+
+/*Estilos para la pagina lado oscuro*/
+
+/* Estilos para la sección de introducción y el grid de características */
 
 .container-intro {
     display: grid;
@@ -11,10 +16,10 @@
 }
 
 .intro {
-    font-size: 2.2rem;
+    font-size: variables.$size-intro;
     text-align: justify;
     line-height: 1.8;
-    color: #e8e8e8;
+    color: variables.$color-p;
     padding: 1rem;
     max-width: 100rem;
     width: 100%;
@@ -33,10 +38,10 @@
 }
 
 .img-descrip {
-    font-family: "Amarante", serif;
-    font-size: 1.8rem;
-    color: #cd7f32;
-    background-color: rgba(26, 26, 46, 0.9);
+    font-family: variables.$font-p;
+    font-size: variables.$size-img-descrip;
+    color: variables.$color-h2;
+    background-color: variables.$bg-h2-color;
     text-align: center; 
     padding: 0.5rem; 
     margin-top: 2rem;
@@ -47,11 +52,11 @@
     grid-row: span 2 / span 2;
     grid-column-start: 2;
     grid-row-start: 1;
-    font-family: "Amarante", serif;
-    font-size: 2.3rem;
+    font-family: variables.$font-p;
+    font-size: variables.$size-inicio;
     text-align: justify;
     line-height: 1.6;
-    color: #e8e8e8;
+    color: variables.$color-p;
     padding: 1rem;
     max-width: 100rem; 
     width: 100%; 
@@ -61,9 +66,9 @@
 /* Estilos para el grid de características */
 
 .subtitulo{
-    font-size: 3.2rem;
-    color: #cd7f32;
-    background: rgba(26, 26, 46, 0.9);
+    font-size: variables.$size-subtitulo;
+    color: variables.$color-h2;
+    background: variables.$bg-h2-color;
     border-bottom: 1px solid #8b4513;
     border-radius: 2rem;
     padding: 1rem;
@@ -85,22 +90,22 @@
 .icon-sub {
     width: 3rem;
     height: 3rem;
-    color: var(--h3-color);
+    color: variables.$icon-nav-color;
     margin-right: 1rem;
     vertical-align: middle;
 }
 
 .grid-perfil {
-    background-color: rgba(26, 26, 46, 0.9);
+    background-color: variables.$bg-h2-color;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .grid-perfil h3 {
-    font-size: 2.8rem;
-    color: #cd7f32;
-    background: rgba(26, 26, 46, 0.9);
+    font-size: variables.$size-h3-grid;
+    color: variables.$color-h3;
+    background: variables.$bg-h2-color;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -108,7 +113,7 @@
 }
 
 .grid-perfil p {
-    font-size: 2rem;
+    font-size: variables.$size-p-grid;
     color: #e8e8e8;
     line-height: 1.6;
     text-align: justify;
@@ -122,9 +127,9 @@
 }
 
 .grid-metodos h3 {
-    font-size: 2.8rem;
-    color: #cd7f32;
-    background: rgba(26, 26, 46, 0.9);
+    font-size: variables.$size-h3-grid;
+    color: variables.$color-h3;
+    background: variables.$bg-h2-color;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -132,23 +137,23 @@
 }
 
 .grid-metodos p {
-    font-size: 2rem;
-    color: #e8e8e8;
+    font-size: variables.$size-p-grid;
+    color: variables.$color-p;
     line-height: 1.6;
     text-align: justify;
 }
 
 .grid-seleccion {
-    background-color: rgba(26, 26, 46, 0.9);
+    background-color: variables.$bg-h2-color;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .grid-seleccion h3 {
-    font-size: 2.8rem;
-    color: #cd7f32;
-    background: rgba(26, 26, 46, 0.9);
+    font-size: variables.$size-h3-grid;
+    color: variables.$color-h3;
+    background: variables.$bg-h2-color;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -156,23 +161,23 @@
 }
 
 .grid-seleccion p {
-    font-size: 2rem;
-    color: #e8e8e8;
+    font-size: variables.$size-p-grid;
+    color: variables.$color-p;
     line-height: 1.6;
     text-align: justify;
 }
 
 .grid-motivaciones{
-    background-color: rgba(26, 26, 46, 0.9);
+    background-color: variables.$bg-h2-color;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .grid-motivaciones h3 {
-    font-size: 2.8rem;
-    color: #cd7f32;
-    background: rgba(26, 26, 46, 0.9);
+    font-size: variables.$size-h3-grid;
+    color: variables.$color-h3;
+    background: variables.$bg-h2-color;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -180,8 +185,8 @@
 }
 
 .grid-motivaciones p {
-    font-size: 2rem;
-    color: #e8e8e8;
+    font-size: variables.$size-p-grid;
+    color: variables.$color-p;
     line-height: 1.6;
     text-align: justify;
 }
