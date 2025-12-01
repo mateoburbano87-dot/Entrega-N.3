@@ -139,6 +139,10 @@
 
 /* Animación para la barra de navegación */
 
+.nav-bg{
+    animation: aparecer-abajo 2s ease-out;
+}
+
 /* Animación para los enlaces de navegación */
 .links-nav {
     position: relative;
@@ -169,6 +173,16 @@ footer {
 
 h1 {
     animation: aparecer-arriba 1.5s ease-out;
+}
+
+/*aniamciones para texto introduccion*/
+
+.intro{
+    animation: aparecer 3s ease-out;
+}
+
+.inicio{
+    animation: aparecer 3s ease-out;
 }
 
 /* Animación para la imagen de introducción */
@@ -218,6 +232,12 @@ h1 {
 
 /*Animaciones para pagina archivos criminales*/
 
+/*animacion para intro tabla archivos*/
+
+.intro-tabla{
+    animation: aparecer 4s ease-out;
+}   
+
 /* Animación para la tabla */
 .tabla-archivos {
     animation: aparecer 5s ease-out;
@@ -240,6 +260,12 @@ h1 {
 }
 
 /*Animaciones pagina patrones en la sombra*/
+
+/*aniamacion para intro tabla patrones*/
+
+.intro-patrones{
+    animation: aparecer 4s ease-out;
+}
 
 /* Animación para la tabla de patrones */
 .tabla-patrones {
@@ -287,6 +313,12 @@ h1 {
 .seccion-comparacion p:nth-of-type(4) { animation-delay: 4s; }
 
 /*Animaciones pagina expedientes secretos*/
+
+/*aniamacion para texto introduccion expediente*/
+
+.intro-expedientes{
+    animation: aparecer 4s ease-out;
+}
 
 /* Animación para las secciones de cada asesino */
 .bundy-container, .gein-container, .dahmer-container, .gacy-container, .jack-container {
@@ -341,7 +373,11 @@ h1 {
 /* Animación para los subtítulos */
 .sub2 {
     position: relative;
-    animation: deslizar-derecha 1s ease-out;
+    animation: deslizar-derecha 4s ease-out;
     overflow: hidden;
+}
+
+.subtitulo{
+    animation: deslizar-izquierda 4s ease-out;
 }
 
