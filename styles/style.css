@@ -1,0 +1,1092 @@
+@charset "UTF-8";
+/*Estilos Base Globales*/
+/* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/*Estilos de tipografía globales*/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/* Estilos encabezdo h1 */
+h1 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 4rem;
+  color: #e8e8e8;
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.3) 0%, rgba(26, 26, 46, 0.8) 50%, rgba(139, 0, 0, 0.3) 100%);
+  box-shadow: 0 0 20px rgba(139, 0, 0, 0.4);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 2rem 6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+/* Estilos encabezado h2 */
+h2 {
+  font-family: "Instrument Serif", serif;
+  font-size: 3.2rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px #8b4513;
+  padding: 1rem;
+  margin: 2rem 4rem;
+  text-align: left;
+  text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+}
+
+/* Estilos encabezado h3 */
+h3 {
+  font-family: "Fascinate Inline", system-ui;
+}
+
+/* Estilos párrafos */
+p {
+  font-family: "Amarante", serif;
+}
+
+/*Estilo del fondo de la página*/
+body {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 25%, #16213e 50%, #2d0000 75%, #0a0a0f 100%);
+  background-attachment: fixed; /* Fijo para efecto parallax */
+  background-size: cover, 200px 200px, cover; /* Ajuste del tamaño del fondo */
+  min-height: 100vh; /* Asegurar que el fondo cubra toda la altura de la ventana */
+}
+
+/* Estilos de la barra de navegación */
+.nav-bg {
+  background-color: rgba(26, 26, 46, 0.95) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  width: 190rem;
+}
+
+.nav-bg a {
+  font-family: "Mouse Memoirs", sans-serif;
+  color: #8a8a8a !important;
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem; /* Espaciado de letras */
+  text-decoration: none;
+}
+
+.links-nav {
+  margin: 0 1.5rem; /* Espaciado entre enlaces */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border-bottom: 1px solid transparent; /* Borde inferior */
+  transition: border-color 0.3s; /* Transición suave para el borde */
+}
+.links-nav:hover {
+  border-bottom: 1px solid #8b0000; /* Cambia el color del borde al pasar el ratón */
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-ul .nav-li {
+  flex: 1;
+  text-align: center;
+}
+
+.icon-nav {
+  color: #cd7f32;
+  width: 5rem; /* Ancho del icono */
+  height: 5rem; /* Altura del icono */
+  margin: auto 1rem; /* Espaciado alrededor del icono */
+}
+
+.container-intro {
+  display: grid;
+  grid-template-columns: 60rem 50rem;
+  grid-template-rows: 60rem 30rem;
+  gap: 0 2rem; /* Espacio entre filas y columnas */
+  align-items: center; /* centrar verticalmente el grid */
+  justify-content: center; /* centar el grid */
+  margin: 4rem auto;
+}
+
+.intro {
+  font-size: 2.2rem;
+  text-align: justify;
+  line-height: 1.8;
+  color: #e8e8e8;
+  padding: 1rem;
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
+  grid-row: 2/3;
+}
+
+.container-intro-img img {
+  width: 85%; /* Ajusta el tamaño de la imagen según sea necesario */
+  box-shadow: 0 8px 25px rgba(139, 0, 0, 0.3);
+  border-radius: 1rem;
+  border: 2px solid #8b4513;
+  display: block; /* Convertir en bloque para centrar */
+  margin: 0 auto; /* Centrar horizontalmente */
+  grid-column: 2/3;
+}
+
+.img-descrip {
+  font-family: "Amarante", serif;
+  font-size: 1.8rem;
+  color: #cd7f32;
+  background-color: rgba(26, 26, 46, 0.9);
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  grid-column: 2/3;
+}
+
+.inicio {
+  grid-row: span 2/span 2;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  font-family: "Amarante", serif;
+  font-size: 2.3rem;
+  text-align: justify;
+  line-height: 1.6;
+  color: #e8e8e8;
+  padding: 1rem;
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Estilos para el grid de características */
+.subtitulo {
+  font-size: 3.2rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px solid #8b4513;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 50rem;
+  text-align: center;
+  text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+}
+
+.grid-caracteristicas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 2rem;
+  max-width: 120rem;
+  margin: 2rem auto;
+}
+
+.icon-sub {
+  width: 3rem;
+  height: 3rem;
+  color: var(--h3-color);
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.grid-perfil {
+  background-color: rgba(26, 26, 46, 0.9);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.grid-perfil h3 {
+  font-size: 2.8rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.grid-perfil p {
+  font-size: 2rem;
+  color: #e8e8e8;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.grid-metodos {
+  background-color: rgba(26, 26, 46, 0.9);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.grid-metodos h3 {
+  font-size: 2.8rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.grid-metodos p {
+  font-size: 2rem;
+  color: #e8e8e8;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.grid-seleccion {
+  background-color: rgba(26, 26, 46, 0.9);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.grid-seleccion h3 {
+  font-size: 2.8rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.grid-seleccion p {
+  font-size: 2rem;
+  color: #e8e8e8;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.grid-motivaciones {
+  background-color: rgba(26, 26, 46, 0.9);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.grid-motivaciones h3 {
+  font-size: 2.8rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.grid-motivaciones p {
+  font-size: 2rem;
+  color: #e8e8e8;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/*Estilos pagina archivos de la web*/
+.intro-tabla {
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 2rem auto;
+  width: 170rem;
+}
+
+/*Estilos tabla archivos*/
+.tabla-archivos {
+  width: 170rem;
+  margin: 2rem auto 6rem auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.titulo-tabla {
+  font-family: "Instrument Serif", serif;
+  font-size: 3.2rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px solid #8b4513;
+  padding: 1rem;
+  margin: 0 auto 2rem auto;
+  width: 170rem;
+  text-align: center;
+  text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+}
+
+.tabla-archivos th,
+.tabla-archivos td {
+  color: #e8e8e8;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tabla-archivos thead {
+  background: rgba(26, 26, 46, 0.9);
+  color: #cd7f32;
+}
+
+.tabla-archivos tbody tr:nth-child(even) {
+  background-color: rgba(26, 26, 46, 0.8);
+}
+
+.tabla-archivos tbody tr:nth-child(odd) {
+  background-color: var(--table-row-odd);
+}
+
+.tabla-archivos tbody tr:hover {
+  background-color: var(--table-row-hover);
+}
+
+/* Estilos pagina Patrones de Crimen */
+.intro-patrones {
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 2rem auto;
+  width: 170rem;
+}
+
+.tabla-patrones {
+  width: 170rem;
+  margin: 2rem auto 6rem auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.tabla-patrones th,
+.tabla-patrones td {
+  color: #e8e8e8;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tabla-patrones thead {
+  background: rgba(26, 26, 46, 0.9);
+  color: #cd7f32;
+}
+
+.tabla-patrones tbody tr:nth-child(even) { /* Filas pares */
+  background-color: rgba(26, 26, 46, 0.9);
+}
+
+.tabla-patrones tbody tr:nth-child(odd) { /* Filas impares */
+  background-color: rgba(26, 26, 46, 0.7);
+}
+
+.tabla-patrones tbody tr:hover {
+  background-color: rgba(139, 0, 0, 0.3);
+}
+
+.seccion-comparacion h2 {
+  font-size: 3.2rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px solid #8b4513;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 50rem;
+  text-align: center;
+  text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+}
+
+.seccion-comparacion h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  background: rgba(26, 26, 46, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  text-align: center;
+  max-width: fit-content;
+}
+
+.seccion-comparacion p {
+  font-size: 2rem;
+  color: #e8e8e8;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 1rem 3rem 3rem;
+}
+
+/* Estilos para la pagina expedientes */
+.intro-expedientes {
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 2rem auto;
+  width: 170rem;
+}
+
+.subtitulo {
+  font-size: 3rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px solid #dcdcdc;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 2rem auto 2rem auto;
+  text-align: center;
+  text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+  align-content: center;
+  width: 50rem;
+  height: 8.5rem;
+}
+
+img {
+  margin: 1rem auto;
+  border-radius: 2rem;
+  background-color: rgba(26, 26, 46, 0.9);
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion-img {
+  font-family: "Amarante", serif;
+  font-size: 1.8rem;
+  color: #cd7f32;
+  background-color: rgba(26, 26, 46, 0.9);
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.p4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 2.5rem;
+  text-align: justify;
+  line-height: 1.6;
+  color: #8a8a8a;
+  padding: 1rem;
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.p4-grid {
+  grid-column: span 2/span 2;
+  grid-column-start: 1;
+  grid-row-start: 4;
+  font-size: 2.8rem;
+  text-align: justify;
+  line-height: 1.6;
+  color: #8a8a8a;
+  padding: 1rem;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.subtitulo.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 2/span 2;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  margin: 2rem auto;
+}
+
+/* Estilos para el contenedor de Ted Bundy */
+.bundy-container h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  background: rgba(139, 0, 0, 0.15);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.bundy-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows: 10rem 60rem 7rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contenedor-img-bundy {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-titulo-bundy {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  padding: auto;
+  align-items: center;
+}
+
+/*Estilos para el coontenedor de Ed Gein */
+.gein-container h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  background: rgba(139, 0, 0, 0.15);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.gein-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows: 10rem 60rem 7rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contenedor-img-gein {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-titulo-gein {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  padding: auto;
+}
+
+/* Estilos para el contenedor de Jeffrey Dahmer */
+.dahmer-container h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  background: rgba(26, 26, 46, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.dahmer-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows: 10rem 60rem 7rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contenedor-img-dahmer {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-titulo-dahmer {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  padding: auto;
+}
+
+/* Estilos para el contenedor de John Wayne Gacy */
+.gacy-container h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  background: rgba(139, 0, 0, 0.15);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.gacy-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows: 10rem 60rem 7rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contenedor-img-gacy {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-titulo-gacy {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  padding: auto;
+}
+
+/* Estilos para el contenedor de Jack el Destripador */
+.jack-container h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  background: rgba(139, 0, 0, 0.15);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.jack-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows: 10rem 60rem 7rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contenedor-img-jack {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-titulo-jack {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  padding: auto;
+}
+
+/*Estilos pagina Investigacion*/
+.p5 {
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 2rem auto;
+  width: 170rem;
+}
+
+.sub2 {
+  font-size: 3.2rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px solid #8b4513;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 2rem auto 2rem auto;
+  width: 50rem;
+  text-align: center;
+  text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
+}
+
+footer {
+  background-color: rgba(26, 26, 46, 0.95);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 4rem auto 2rem auto;
+  width: 150rem;
+  border-top: 1px solid rgba(139, 69, 19, 0.8);
+}
+
+.footer {
+  font-family: "Amarante", serif;
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  margin: 0.5rem 0;
+}
+
+/* Keyframes de animaciones */
+
+@keyframes aparecer-arriba {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecer-zoom {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes deslizar-abajo {
+    from {
+        opacity: 0; 
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes parpadeo {
+    from, to { border-color: transparent; }
+    50% { border-color: #cd7f32; }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes deslizar-derecha {
+    from { 
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulsar {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes aparecer-abajo {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoom {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes deslizar-izquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes expandir-ancho {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes brillar {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+@keyframes aparecer-izquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulso-suave {
+    0% { opacity: 1; }
+    50% { opacity: 0.9; }
+    100% { opacity: 1; }
+}
+
+@keyframes deslizar-abajo {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Animaciones globales*/
+
+/* Animación para la barra de navegación */
+
+/* Animación para los enlaces de navegación */
+.links-nav {
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.links-nav::after {
+    content: ''; /* Línea inferior */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #8b0000;
+    transition: width 0.5s ease;
+}
+
+.links-nav:hover::after {
+    width: 100%;
+}
+
+/* Animación para el footer */
+footer {
+    animation: aparecer-abajo 1.5s ease-out;
+}
+
+/*Animaciones para pagina lado oscuro*/
+
+h1 {
+    animation: aparecer-arriba 1.5s ease-out;
+}
+
+/* Animación para la imagen de introducción */
+.img-intro {
+    animation: aparecer-zoom 2s ease-out;
+    transition: transform 0.3s ease;
+}
+
+.img-intro:hover {
+    transform: scale(1.02);
+}
+
+/* Animación para grid de características */
+.grid-perfil, .grid-metodos, .grid-seleccion, .grid-motivaciones {
+    animation: deslizar-abajo 1s ease-out;
+    animation-fill-mode: both;
+}
+
+.grid-perfil {
+    animation-delay: 0.2s;
+}
+
+.grid-metodos {
+    animation-delay: 0.4s;
+}
+
+.grid-seleccion {
+    animation-delay: 0.6s;
+}
+
+.grid-motivaciones {
+    animation-delay: 0.8s;
+}
+
+/* Animación para los íconos de características */
+.icon-sub {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.grid-perfil:hover .icon-sub,
+.grid-metodos:hover .icon-sub,
+.grid-seleccion:hover .icon-sub,
+.grid-motivaciones:hover .icon-sub {
+    transform: rotate(15deg) scale(1.1);
+    color: #8b0000 !important;
+}
+
+/*Animaciones para pagina archivos criminales*/
+
+/* Animación para la tabla */
+.tabla-archivos {
+    animation: aparecer 5s ease-out;
+}
+
+/* Animación para las filas de la tabla */
+.tabla-archivos tbody tr {
+    animation: deslizar-derecha 0.8s ease-out;
+    animation-fill-mode: both; 
+}
+
+/* Efecto hover mejorado para las filas */
+.tabla-archivos tbody tr {
+    transition: all 1s ease;
+}
+
+.tabla-archivos tbody tr:hover {
+    transform: translateX(5px); 
+    box-shadow: 0 4px 8px rgba(139, 0, 0, 0.3);
+}
+
+/*Animaciones pagina patrones en la sombra*/
+
+/* Animación para la tabla de patrones */
+.tabla-patrones {
+    animation: aparecer-zoom 1.5s ease-out;
+}
+
+/* Animación para las celdas de la tabla */
+.tabla-patrones td {
+    animation: pulso-suave 1s ease-out;
+    animation-fill-mode: both;
+}
+
+/* Efecto hover para celdas */
+.tabla-patrones td {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tabla-patrones td:hover {
+    background-color: rgba(139, 0, 0, 0.2) !important;
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.3);
+}
+
+/* Animación para las secciones de comparación */
+.seccion-comparacion h3 {
+    animation: deslizar-izquierda 1s ease-out;
+    animation-fill-mode: both;
+}
+
+.seccion-comparacion h3:nth-of-type(1) { animation-delay: 1s; }
+.seccion-comparacion h3:nth-of-type(2) { animation-delay: 2s; }
+.seccion-comparacion h3:nth-of-type(3) { animation-delay: 3s; }
+.seccion-comparacion h3:nth-of-type(4) { animation-delay: 4s; }
+
+.seccion-comparacion p {
+    animation: aparecer 1.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.seccion-comparacion p:nth-of-type(1) { animation-delay: 1s; }
+.seccion-comparacion p:nth-of-type(2) { animation-delay: 2s; }
+.seccion-comparacion p:nth-of-type(3) { animation-delay: 3s; }
+.seccion-comparacion p:nth-of-type(4) { animation-delay: 4s; }
+
+/*Animaciones pagina expedientes secretos*/
+
+/* Animación para las secciones de cada asesino */
+.bundy-container, .gein-container, .dahmer-container, .gacy-container, .jack-container {
+    animation: aparecer-abajo 1.2s ease-out;
+    animation-fill-mode: both;
+}
+
+.bundy-container { animation-delay: 1s; }
+.gein-container { animation-delay: 2s; }
+.dahmer-container { animation-delay: 3s; }
+.gacy-container { animation-delay: 4s; }
+.jack-container { animation-delay: 5s; }
+
+/* Animación para las imágenes de perfil */
+.imagen-detalles {
+    animation: zoom 1.5s ease-out;
+    transition: all 0.5s ease;
+    filter: grayscale(30%);
+}
+
+.imagen-detalles:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(139, 0, 0, 0.4);
+}
+
+/* Animación para los títulos de sección */
+.grid-titulo-bundy, .grid-titulo-gein, .grid-titulo-dahmer, .grid-titulo-gacy, .grid-titulo-jack {
+    position: relative;
+    animation: deslizar-izquierda 1s ease-out;
+}
+
+/* Animación para el texto de descripción */
+.p4, .p4-grid {
+    animation: aparecer 1.8s ease-out;
+}
+
+/*Animaciones pagina investigacion*/
+
+/* Animación para los párrafos de investigación */
+.p5 {
+    animation: aparecer-abajo 1.2s ease-out;
+    animation-fill-mode: both;
+}
+
+.p5:nth-of-type(1) { animation-delay: 1s; } 
+.p5:nth-of-type(2) { animation-delay: 2s; }
+.p5:nth-of-type(3) { animation-delay: 3s; }
+.p5:nth-of-type(4) { animation-delay: 4s; }
+.p5:nth-of-type(5) { animation-delay: 5s; }
+
+/* Animación para los subtítulos */
+.sub2 {
+    position: relative;
+    animation: deslizar-derecha 1s ease-out;
+    overflow: hidden;
+}
+
+.sub2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(205, 127, 50, 0.2), transparent);
+    animation: brillo 2s ease-out 0.5s forwards;
+}
+
+/*# sourceMappingURL=style.css.map */
+
