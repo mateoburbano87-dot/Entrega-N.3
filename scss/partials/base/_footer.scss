@@ -1,6 +1,6 @@
 footer {
-    background-color: rgba(26, 26, 46, 0.95);
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.6);
+    background-color: variables.$nav-bg-color;
+    box-shadow: 0 -4px 12px variables.$nav-bg-shadow;
     border-radius: 2rem;
     text-align: center;
     padding: 2rem 1rem;
@@ -10,8 +10,8 @@ footer {
 }
 
 .footer {
-    font-family: "Amarante", serif;
+    font-family: variables.$font-p;
     font-size: 2.4rem;
-    color: #8a8a8a;
+    color: variables.$color-p;
     margin: 0.5rem 0;
 }
