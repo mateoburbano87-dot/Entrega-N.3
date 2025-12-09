@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!--Bootstrap-->
+    <link rel="stylesheet" href="../styles/style.css"> <!--CSS-->
+    <title>Cuarta Pestaña</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Expedientes Secretos</h1>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bg">
+            <div class="container-fluid">
+                <a class="navbar-brand links-nav">Expedientes X</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-ul">
+                        <li class="nav-item nav-li">
+                            <a class="nav-link active links-nav" aria-current="page" href="../index.html">
+                                <svg class="icon-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="#cd7f32" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-miterlimit="10">
+                                        <path
+                                            d="M9.5 17v2.5m2-4v4m2-2.5v2.5m4.588-5H15.5l-4-2l-3.735 2H4.912m4.588-4V1.625m4 8.875V1.625M15.5 22l-4 1.5l-4-1.5v-3.5l4-3l4 3z" />
+                                        <path d="m19.5 18.5l-3-8.5l-3 .5l-2 2l-2-2l-3-.5l-3 8.5" />
+                                        <path d="m15.5 21l4-2.5h3l-3-8.5V5l-8-4.5l-8 4.5v5l-3 8.5h3l4 2.5" />
+                                    </g>
+                                </svg>El lado oscuro</a>
+                        </li>
+                        <li class="nav-item nav-li">
+                            <a class="nav-link links-nav" href="./archivos.html">
+                                <svg class="icon-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+                                    <path fill="#cd7f32" d="M2 8V7h5V4h1v4M0 6V1h3l1 1h2v4" />
+                                </svg>Archivos Criminales</a>
+                        </li>
+                        <li class="nav-item nav-li">
+                            <a class="nav-link links-nav" href="./patrones.html">
+                                <svg class="icon-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="#cd7f32"
+                                        d="M20.98 9.193V6.822a2.992 2.992 0 1 0-3.796-3.81h-2.368a2.992 2.992 0 1 0-3.806 3.813v2.37a2.972 2.972 0 0 0 0 5.624v2.37a2.99 2.99 0 0 0-1.828 1.822H6.818A2.99 2.99 0 0 0 5 17.193v-2.37a3.009 3.009 0 1 0-2-.007v2.377a2.99 2.99 0 1 0 3.815 3.814h2.37a2.992 2.992 0 1 0 3.825-3.81v-2.378a2.982 2.982 0 0 0 0-5.623V6.819a2.99 2.99 0 0 0 1.806-1.81h2.368a2.96 2.96 0 0 0 1.796 1.813v2.377A2.97 2.97 0 0 0 17 12a3 3 0 1 0 3.98-2.807M4 21a1 1 0 1 1 1-1a1 1 0 0 1-1 1m0-8a1 1 0 1 1 1-1a1 1 0 0 1-1 1m8 8a1 1 0 1 1 1-1a1 1 0 0 1-1 1m0-8a1.033 1.033 0 0 1-1.02-1.017A1.003 1.003 0 0 1 12 11a.97.97 0 0 1 .98.983A1 1 0 0 1 12 13m-.02-8.006a.999.999 0 0 1 0-1.997a.999.999 0 1 1 0 1.997M20 12.98a.984.984 0 0 1-1-.98a1.02 1.02 0 0 1 1.02-1a.99.99 0 0 1-.02 1.981M20 5a1 1 0 1 1 1-1a1 1 0 0 1-1 1" />
+                                    <path fill="#cd7f32"
+                                        d="M20 17a3 3 0 1 0 3 3a3 3 0 0 0-3-3m0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1M4 1a3 3 0 1 0 3 3a3 3 0 0 0-3-3m0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1" />
+                                </svg>Patrones en la Sombra</a>
+                        </li>
+                        <li class="nav-item nav-li">
+                            <a class="nav-link links-nav" href="#">
+                                <svg class="icon-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                    <path fill="#cd7f32"
+                                        d="M8.8 0c.274 0 .537.113.726.312l3.2 3.428c.176.186.274.433.274.689V13a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1zM12 5H8.5a.5.5 0 0 1-.5-.5V1H2v12h10zm-7.5 6a.5.5 0 1 1 0-1h5a.5.5 0 1 1 0 1zm0-3a.5.5 0 0 1 0-1h5a.5.5 0 1 1 0 1zm1 8a.5.5 0 1 1 0-1H14V6.5a.5.5 0 1 1 1 0V15a1 1 0 0 1-1 1z" />
+                                </svg>Expedientes Secretos</a>
+                        </li>
+                        <li class="nav-item nav-li">
+                            <a class="nav-link links-nav" href="./investigacion.html">
+                                <svg class="icon-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="#cd7f32"
+                                        d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2c0 .37-.03.73-.08 1.08c.69.1 1.33.32 1.92.64c.1-.56.16-1.13.16-1.72c0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85c-.32.63-.67 1.24-1.07 1.81c-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56m7.91 12.81L17.75 22L15 19l1.16-1.16l1.59 1.59l3.59-3.59z" />
+                                </svg>La Investigación</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+        <main>
+
+        <p class="intro-expedientes">En esta sección nos adentramos en las profundidades de la psique criminal, explorando los perfiles
+            psicológicos y las historias de vida que moldearon a algunos de los asesinos en serie más emblemáticos. A
+            través de un análisis meticuloso, desglosamos sus trayectorias vitales, desde las experiencias formativas en
+            su infancia hasta las motivaciones complejas que impulsaron sus crímenes. Cada caso representa un puzzle
+            psicológico único donde convergen factores biográficos, trastornos de personalidad y circunstancias
+            sociales, ofreciendo una perspectiva integral sobre cómo se desarrollan estos patrones de conducta criminal.
+        </p>
+    </main>
+
+    <section class="bundy-container">
+
+        <h2 class="subtitulo grid-titulo-bundy">Ted Bundy <span class="apodo">"El Encantador"</span></h2>
+
+            <div class="contenedor-img-bundy">
+                <img src="../image/Ted Bundy.avif" alt="Ted Bundy" class="imagen-detalles" width="550"
+                    height="500">
+                <p class="descripcion-img">Theodore Robert Bundy-25 de Junio de 1979</p>
+            </div>
+
+            <p class="p4"> Theodore Robert Bundy nació en 1946 en Burlington, Vermont. Creció creyendo que sus
+                abuelos
+                eran sus padres y que su madre era su hermana, un engaño que descubrió durante su adolescencia
+                y que marcó profundamente su desarrollo psicológico. Estudió psicología en la Universidad de
+                Washington, donde mostró un interés temprano en la política y trabajó para el Partido Republicano.
+                Externamente, Bundy proyectaba la imagen del joven americano perfecto: atractivo, inteligente,
+                carismático y con un futuro prometedor. Esta fachada ocultaba a un depredador sexual en desarrollo
+                que comenzaría su reinado de terror en 1974.</p>
+            <h3 class="subtitulo-grid">Patron Criminal</h3>
+            <p class="p4-grid">Bundy operó en múltiples estados entre 1974 y 1978, asesinando al menos a 30 mujeres
+                jóvenes.
+                Su modus operandi era sofisticado y evolucionó con el tiempo. Inicialmente usaba engaños
+                elaborados: se hacía pasar por hombre discapacitado con muletas o yesos para generar lástima
+                y pedir ayuda a sus víctimas. Posteriormente adoptó la táctica de hacerse pasar por oficial
+                de policía. Acechaba en campus universitarios, parques y centros comerciales, seleccionando
+                mujeres que encajaban en su "tipo ideal": jóvenes atractivas, de cabello largo partido en el
+                centro, generalmente estudiantes universitarias.
+                Una vez que lograba atraerlas a su Volkswagen Escarabajo, las golpeaba brutalmente con una
+                barra de hierro o las estrangulaba. Sus crímenes mostraban un claro patrón de escalada:
+                comenzó con asaltos sexuales que progresaron a homicidios y eventualmente incluyeron
+                necrofilia y mutilación post-mortem. El caso del Chi Omega sorority house en 1978, donde
+                atacó brutalmente a cuatro estudiantes en una sola noche, marcó el punto más violento de
+                su carrera criminal.</p>
+    </section>
+
+     <section class="gein-container">
+            <h2 class="subtitulo grid-titulo-gein">Ed Gein <span class="apodo">"El Carnicero de Plainfield"</span></h2>
+            <div class="contenedor-img-gein">
+                <img src="../image/ed gein.jpg" alt="Ed Gein"
+                    class="imagen-detalles" width="450" height="500">
+                <p class="descripcion-img">Edward Theodore Gein - 21 de Noviembre de 1957</p>
+            </div>
+            <p class="p4">Edward Theodore Gein nació en 1906 en La Crosse, Wisconsin. Creció en una granja aislada
+                bajo el dominio de su madre Augusta, una mujer religiosa fanática que enseñaba a sus hijos
+                que todas las mujeres excepto ella eran prostitutas y pecadoras. Tras la muerte de su padre
+                y hermano, Gein vivió solo con su madre en una relación simbiótica y patológica. Cuando
+                Augusta murió en 1945, Gein quedó completamente solo y su salud mental se deterioró rápidamente.
+                Comenzó a profanar tumbas en cementerios locales, desarrollando obsesiones necrofílicas que
+                eventualmente escalarían a asesinato.</p>
+            <h3 class="subtitulo-grid">Patron Criminal</h3>
+            <p class="p4-grid">A diferencia de otros asesinos seriales, Gein solo fue convicto por dos asesinatos, pero
+                su verdadero horror residía en sus actividades de profanación y mutilación. Entre 1947 y
+                1957, profanó al menos 40 tumbas de mujeres recién enterradas, siempre seleccionando
+                cuerpos que se parecían a su madre. En 1954 asesinó a Mary Hogan, dueña de un bar local,
+                y en 1957 a Bernice Worden, una tendera a la que disparó con una escopeta.
+
+                Cuando la policía allanó su granja en 1957, descubrieron una casa de horror sin precedentes.
+                Encontraron máscaras faciales hechas de piel humana, un chaleco de pechos humanos, tazones
+                hechos de cráneos, muebles tapizados con piel humana, y varios órganos preservados en frascos.
+                Gein admitió que se vestía con la piel de sus víctimas para "convertirse en su madre". Su caso
+                inspiró personajes de películas como "Psycho", "The Texas Chainsaw Massacre" y "The Silence
+                of the Lambs".</p>
+        </section>
+
+        <section class="dahmer-container">
+            <h2 class="subtitulo grid-titulo-dahmer">Jeffrey Dahmer <span class="apodo">"El Carnicero de
+                    Milwaukee"</span></h2>
+            <div class="contenedor-img-dahmer">
+                <img src="../image/Jeffrey-Dahmer-.webp"
+                    alt="Jeffrey Dahmer" class="imagen-detalles" width="550" height="450">
+                <p class="descripcion-img">Jeffrey Lionel Dahmer - 22 de Julio de 1991</p>
+            </div>
+            <p class="p4">Jeffrey Lionel Dahmer nació en 1960 en Milwaukee, Wisconsin. Desde niño mostró comportamientos
+                perturbadores: coleccionaba animales muertos y practicaba la disección. Sus padres tuvieron
+                un matrimonio conflictivo que terminó en divorcio cuando él era adolescente, dejándolo solo
+                en la casa familiar. Dahmer desarrolló problemas con el alcohol desde temprana edad y mostró
+                tendencias homosexuales que conflictuaban con su educación conservadora. Después de ser
+                dado de baja del ejército por alcoholismo, regresó a Milwaukee donde comenzaría su carrera
+                criminal en serio.</p>
+
+            <h3 class="subtitulo-grid">Patron Criminal</h3>
+            <p class="p4-grid">Dahmer operó entre 1978 y 1991, asesinando a 17 hombres y niños. Su modus operandi era
+                sistemático y ritualístico: frecuentaba bares gay y centros comerciales para encontrar
+                víctimas, a quienes invitaba a su apartamento con ofertas de dinero por sesiones de fotos
+                o sexo. Una vez allí, les ofrecía bebidas mezcladas con drogas sedantes. Cuando estaban
+                inconscientes, los estrangulaba o les inyectaba ácido clorhídrico en el cerebro en un
+                macabro intento de crear "zombies sexuales" que nunca lo abandonarían.
+                Sus crímenes incluían necrofilia, canibalismo y la preservación sistemática de partes
+                del cuerpo. Mantenía cabezas y órganos en su refrigerador, y creó un "altar" con cráneos
+                pintados. Practicaba la disección con precisión casi quirúrgica y intentó disolver cuerpos
+                en ácido. Su arresto en 1991 ocurrió cuando una víctima potencial escapó esposada y alertó
+                a la policía, quienes descubrieron el horror en su apartamento: fotos polaroid de cuerpos
+                desmembrados, un barril con restos humanos en descomposición y el famoso refrigerador lleno
+                de evidencias de canibalismo.</p>
+        </section>
+
+        <section class="gacy-container">
+            <h2 class="subtitulo grid-titulo-gacy">John Wayne Gacy <span class="apodo">"El Payaso Asesino"</span></h2>
+            <div class="contenedor-img-gacy">
+                <img src="../image/john way gacy.jpg"
+                    alt="John Wayne Gacy" class="imagen-detalles" width="550" height="500">
+                <p class="descripcion-img">John Wayne Gacy - 6 de Febrero de 1990</p>
+            </div>
+            <p class="p4">John Wayne Gacy nació en 1942 en Chicago, Illinois. Tuvo una infancia difícil con un padre
+                alcohólico y abusivo que constantemente lo menospreciaba. A pesar de esto, Gacy se convirtió
+                en un empresario exitoso, dueño de una compañía de construcción y activo en política local
+                del Partido Demócrata. Era conocido en su comunidad como un ciudadano modelo que organizaba
+                fiestas de barrio y se vestía como "Pogo el Payaso" para entretener niños en hospitales.
+                Esta respetable fachada ocultaba a un depredador sexual que ya había sido convicto por
+                agresión sexual a adolescentes en Iowa antes de trasladarse a Illinois.</p>
+
+            <h3 class="subtitulo-grid">Patron Criminal</h3>
+            <p class="p4-grid">Entre 1972 y 1978, Gacy asesinó al menos a 33 jóvenes y hombres, convirtiéndose en uno de
+                los asesinos seriales más prolíficos de Estados Unidos. Operaba desde su casa en los suburbios
+                de Chicago, donde atraía a sus víctimas con ofertas de trabajo en su compañía de construcción
+                o con pagos por sexo. Una vez en su casa, los drogaba y luego aplicaba lo que llamaba la
+                "técnica del lazo": los estrangulaba con una soga mientras los violaba, un método que
+                describía como darles "el último orgasmo".
+                Gacy enterró 26 de sus víctimas en el espacio angosto debajo de su casa y arrojó otras
+                cinco a un río cercano. Cuando la policía investigó la desaparición de Robert Piest en 1978,
+                descubrieron el horror bajo la casa de Gacy. Durante su juicio, Gacy mantuvo que era inocente
+                y que otros cometieron los crímenes en su casa mientras él estaba ausente. Fue sentenciado
+                a muerte y ejecutado por inyección letal en 1994. Sus últimas palabras fueron: "Kiss my ass".</p>
+        </section>
+
+        <section class="jack-container">
+            <h2 class="subtitulo grid-titulo-jack">Jack el Destripador <span class="apodo">"El Destripador de
+                    Whitechapel"</span></h2>
+            <div class="contenedor-img-jack">
+                <img src="../image/Jack el destripador.jpg" alt="Jack el Destripador" class="imagen-detalles" width="550" height="500">
+                <p class="descripcion-img">Jack el Destripador - 1888</p>
+            </div>
+            <p class="p4">La identidad de Jack el Destripador sigue siendo uno de los mayores misterios sin resolver
+                en la historia del crimen. Operó en el distrito pobre de Whitechapel, Londres, durante el
+                otoño de 1888. Las teorías sobre su identidad incluyen desde médicos y aristócratas hasta
+                carniceros y inmigrantes polacos. El nombre "Jack el Destripador" proviene de una carta
+                enviada a la policía que muchos creen fue escrita por el propio asesino. El caso ocurrió
+                en la época victoriana, cuando Whitechapel estaba superpoblada con inmigrantes judíos
+                pobres y prostitutas, creando el ambiente perfecto para que un asesino operara con
+                relativa impunidad.</p>
+
+            <h3 class="subtitulo-grid">Patron Criminal</h3>
+            <p class="p4-grid"> Jack el Destripador es asociado con cinco víctimas canónicas, todas prostitutas de
+                mediana
+                edad: Mary Ann Nichols, Annie Chapman, Elizabeth Stride, Catherine Eddowes y Mary Jane Kelly.
+                Sus ataques ocurrían en las primeras horas de la madrugada en callejones y patios traseros.
+                El modus operandi era consistente: degollaba a sus víctimas con precisión quirúrgica,
+                cortándoles la garganta de oreja a oreja. Luego procedía a mutilar los cuerpos, extrayendo
+                órganos internos con un conocimiento anatómico que sugería entrenamiento médico o experiencia
+                en carnicería.
+                El caso de Mary Jane Kelly fue particularmente brutal - el asesino tuvo tiempo de realizar
+                mutilaciones extensivas en la privacidad de su habitación. El Destripador enviaba cartas
+                burlonas a la policía y a periódicos, firmando algunas como "From Hell" (Desde el Infierno).
+                Su capacidad para evadir captura en una era sin tecnología forense moderna, combinada con
+                la naturaleza grotesca de sus crímenes, capturó la imaginación pública y creó el arquetipo
+                del asesino serial moderno. Los crímenes cesaron abruptamente en noviembre de 1888, dejando
+                el misterio sin resolver para siempre.</p>
+        </section>
+
+
+    <!--Pie de pagina-->
+    <footer>
+
+        <p class="footer">&copy; 2025 Analisis de Asesinos en Serie. Todos los derechos Reservados</p>
+        <p class="footer"> Este sitio web tiene fines educativos e informativos.</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

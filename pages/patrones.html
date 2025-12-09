@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!--Bootstrap-->
+    <link rel="stylesheet" href="../styles/style.css"><!--CSS-->
+    <title>Tercer Pestaña</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Patrones en la sombra</h1>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bg">
+            <div class="container-fluid">
+                <a class="navbar-brand links-nav">Expedientes X</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-ul">
+                        <li class="nav-item nav-li">
+                            <a class="nav-link active links-nav" aria-current="page" href="../index.html">
+                                <svg class="icon-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="#cd7f32" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-miterlimit="10">
+                                        <path
+                                            d="M9.5 17v2.5m2-4v4m2-2.5v2.5m4.588-5H15.5l-4-2l-3.735 2H4.912m4.588-4V1.625m4 8.875V1.625M15.5 22l-4 1.5l-4-1.5v-3.5l4-3l4 3z" />
+                                        <path d="m19.5 18.5l-3-8.5l-3 .5l-2 2l-2-2l-3-.5l-3 8.5" />
+                                        <path d="m15.5 21l4-2.5h3l-3-8.5V5l-8-4.5l-8 4.5v5l-3 8.5h3l4 2.5" />
+                                    </g>
+                                </svg>El lado oscuro</a>
+                        </li>
+                        <li class="nav-item nav-li">
+                            <a class="nav-link links-nav" href="./archivos.html">
+                                <svg class="icon-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+                                    <path fill="#cd7f32" d="M2 8V7h5V4h1v4M0 6V1h3l1 1h2v4" />
+                                </svg>Archivos Criminales</a>
+                        </li>
+                        <li class="nav-item nav-li">
+                            <a class="nav-link links-nav" href="#">
+                                <svg class="icon-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="#cd7f32"
+                                        d="M20.98 9.193V6.822a2.992 2.992 0 1 0-3.796-3.81h-2.368a2.992 2.992 0 1 0-3.806 3.813v2.37a2.972 2.972 0 0 0 0 5.624v2.37a2.99 2.99 0 0 0-1.828 1.822H6.818A2.99 2.99 0 0 0 5 17.193v-2.37a3.009 3.009 0 1 0-2-.007v2.377a2.99 2.99 0 1 0 3.815 3.814h2.37a2.992 2.992 0 1 0 3.825-3.81v-2.378a2.982 2.982 0 0 0 0-5.623V6.819a2.99 2.99 0 0 0 1.806-1.81h2.368a2.96 2.96 0 0 0 1.796 1.813v2.377A2.97 2.97 0 0 0 17 12a3 3 0 1 0 3.98-2.807M4 21a1 1 0 1 1 1-1a1 1 0 0 1-1 1m0-8a1 1 0 1 1 1-1a1 1 0 0 1-1 1m8 8a1 1 0 1 1 1-1a1 1 0 0 1-1 1m0-8a1.033 1.033 0 0 1-1.02-1.017A1.003 1.003 0 0 1 12 11a.97.97 0 0 1 .98.983A1 1 0 0 1 12 13m-.02-8.006a.999.999 0 0 1 0-1.997a.999.999 0 1 1 0 1.997M20 12.98a.984.984 0 0 1-1-.98a1.02 1.02 0 0 1 1.02-1a.99.99 0 0 1-.02 1.981M20 5a1 1 0 1 1 1-1a1 1 0 0 1-1 1" />
+                                    <path fill="#cd7f32"
+                                        d="M20 17a3 3 0 1 0 3 3a3 3 0 0 0-3-3m0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1M4 1a3 3 0 1 0 3 3a3 3 0 0 0-3-3m0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1" />
+                                </svg>Patrones en la Sombra</a>
+                        </li>
+                        <li class="nav-item nav-li">
+                            <a class="nav-link links-nav" href="./expedientes.html">
+                                <svg class="icon-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                    <path fill="#cd7f32"
+                                        d="M8.8 0c.274 0 .537.113.726.312l3.2 3.428c.176.186.274.433.274.689V13a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1zM12 5H8.5a.5.5 0 0 1-.5-.5V1H2v12h10zm-7.5 6a.5.5 0 1 1 0-1h5a.5.5 0 1 1 0 1zm0-3a.5.5 0 0 1 0-1h5a.5.5 0 1 1 0 1zm1 8a.5.5 0 1 1 0-1H14V6.5a.5.5 0 1 1 1 0V15a1 1 0 0 1-1 1z" />
+                                </svg>Expedientes Secretos</a>
+                        </li>
+                        <li class="nav-item nav-li">
+                            <a class="nav-link links-nav" href="./investigacion.html">
+                                <svg class="icon-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="#cd7f32"
+                                        d="M16.5 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2c0 .37-.03.73-.08 1.08c.69.1 1.33.32 1.92.64c.1-.56.16-1.13.16-1.72c0-5.5-4.5-10-10-10C6.47 2 2 6.5 2 12s4.5 10 10 10c.59 0 1.16-.06 1.72-.16A5.9 5.9 0 0 1 13 19c0-.29.03-.57.07-.85c-.32.63-.67 1.24-1.07 1.81c-.83-1.2-1.5-2.53-1.91-3.96h3.72a5.95 5.95 0 0 1 2.59-2.4c.06-.53.1-1.06.1-1.6M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m6.34 6H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25-9.56c1.84.63 3.37 1.9 4.33 3.56h-2.95a15.7 15.7 0 0 0-1.38-3.56m7.91 12.81L17.75 22L15 19l1.16-1.16l1.59 1.59l3.59-3.59z" />
+                                </svg>La Investigación</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <p class="intro-patrones">La comparación sistemática de asesinos en serie revela patrones fascinantes y
+            diferencias
+            cruciales que
+            enriquecen nuestra comprensión del comportamiento criminal extremo. Al examinar aspectos clave como el
+            <strong>número de víctimas</strong>, que varía desde unos pocos casos hasta decenas; el
+            <strong>perfil específico de las víctimas</strong>, que refleja las obsesiones y traumas de cada asesino;
+            los <strong>métodos de asesinato</strong> empleados, desde la sofisticación médica hasta la brutalidad
+            primaria;
+            los <strong>motivos psicológicos subyacentes</strong>, que van desde la búsqueda de poder hasta trastornos
+            psicóticos; y el <strong>comportamiento durante los juicios</strong>, que muestra desde la arrogancia
+            manipuladora
+            hasta la confesión cooperativa, podemos identificar tanto las constantes universales como las
+            particularidades
+            individuales que definen a estos criminales. Esta aproximación comparativa no solo ayuda a desarrollar
+            perfiles
+            criminales más precisos, sino que también contribuye a la creación de estrategias más efectivas para la
+            prevención, investigación y resolución de estos casos extraordinariamente complejos.
+        </p>
+
+        <section class="tabla-patrones">
+            <h2 class="titulo-tabla">Patrones de Crimen</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Ted Bundy</th>
+                        <th>Ed Gein</th>
+                        <th>Jeffrey Dahmer</th>
+                        <th>John Wayne Gacy</th>
+                        <th>Jack el destripador</th>
+                    </tr>
+                </thead>
+
+                <tbody> <!--Cuerpo de la tabla -->
+                    <tr>
+                        <td>Numero de Victimas</td>
+                        <td>30+</td>
+                        <td>2</td>
+                        <td>17</td>
+                        <td>33</td>
+                        <td>5</td>
+                    </tr>
+
+                    <tr>
+                        <td>Perfil de Victimas</td>
+                        <td>Mujeres jovenes, estudiantes</td>
+                        <td>Mujeres</td>
+                        <td>Hombres jovenes, minorias</td>
+                        <td>Adolescentes masculinos</td>
+                        <td>Mujeres prostitutas</td>
+                    </tr>
+
+                    <tr>
+                        <td>Metodo de Asesinato</td>
+                        <td>Estrangulamiento, golpes contundentes</td>
+                        <td>Descuartizamiento, uso de restos</td>
+                        <td>Asfixia, desmembramiento</td>
+                        <td>Asfixia, estrangulamiento</td>
+                        <td>Cortes profundos, mutilacion</td>
+                    </tr>
+
+                    <tr>
+                        <td>Motivo</td>
+                        <td>Control, poder</td>
+                        <td>Obsesion con la muerte y la carne</td>
+                        <td>Deseo sexual, control</td>
+                        <td>Deseo de poder, sadismo</td>
+                        <td>Desconocido, posiblemente psicopatia</td>
+                    </tr>
+
+                    <tr>
+                        <td>Perfil Psicologico</td>
+                        <td>Carismatico, manipulador</td>
+                        <td>Introvertido, perturbado</td>
+                        <td>Psicopatico, trastorno sexual</td>
+                        <td>Antisocial, sadico</td>
+                        <td>Desconocido, posiblemente psicopata</td>
+                    </tr>
+
+                    <tr>
+                        <td>Comportamiento en el Juicio</td>
+                        <td>Defensa propia, Carismatico</td>
+                        <td>Cooperativo, pero perturbado</td>
+                        <td>Confeso, sin remordimientos</td>
+                        <td>Negacion, manipulador</td>
+                        <td>Nunca capturado, juicio inexistente</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+        <section class="seccion-comparacion">
+            <h2>Patrones de Comportamiento</h2>
+
+            <h3>Selección de Víctimas: Un Espejo de sus Obsesiones</h3>
+            <p>La elección de víctimas entre estos cinco asesinos revela patrones psicológicos
+                profundamente
+                distintos.
+                <strong>Ted Bundy</strong> seleccionaba meticulosamente a mujeres jóvenes, atractivas y
+                universitarias
+                que representaban un ideal de belleza y éxito que él mismo anhelaba. En marcado contraste,
+                <strong>Ed Gein</strong> se obsesionaba exclusivamente con mujeres maduras que se parecían
+                físicamente
+                a su madre, buscando literalmente recrear su presencia a través de sus crímenes.
+                <strong>Jeffrey Dahmer</strong> prefería hombres jóvenes, frecuentemente de minorías raciales,
+                reflejando su deseo de poseer y controlar a quienes consideraba socialmente vulnerables.
+                <strong>John Wayne Gacy</strong> dirigía su violencia hacia adolescentes y hombres jóvenes,
+                muchos de los cuales contrataba para trabajos ocasionales, demostrando su necesidad de ejercer
+                poder sobre quienes percibía como inferiores. Finalmente, <strong>Jack el Destripador</strong>
+                se enfocaba exclusivamente en prostitutas de los barrios bajos de Whitechapel, mostrando una
+                misoginia extrema y posiblemente una motivación de "limpieza social". Cada patrón de selección
+                funcionaba como un espejo distorsionado de sus traumas y obsesiones personales.
+            </p>
+
+            <h3>Métodos de Operación: De la Brutalidad a la Sofisticación</h3>
+            <p>Los métodos operativos muestran un espectro que va desde la crudeza primaria hasta la
+                planificación
+                meticulosa. <strong>Bundy</strong> operaba con sofisticación psicológica, usando engaños
+                elaborados
+                como fingir discapacidades para ganar la confianza de sus víctimas antes de golpearlas
+                brutalmente
+                o estrangularlas. <strong>Gein</strong>, aunque menos activo como asesino, se especializaba en
+                la profanación post-mortem, creando macabros artefactos con restos humanos que revelaban su
+                perturbada relación con la figura materna.
+                <strong>Dahmer</strong> desarrolló un protocolo casi científico: drogaba a sus víctimas,
+                practicaba actos de necrofilia y canibalismo, y preservaba partes del cuerpo como trofeos.
+                <strong>Gacy</strong> utilizaba su posición social como contratista para atraer víctimas,
+                aplicando luego la "téccula del lazo" para estrangularlas durante actos sexuales.
+                <strong>Jack el Destripador</strong> demostraba conocimiento anatómico en sus mutilaciones
+                rápidas y precisas, operando con una eficiencia aterradora en espacios públicos que sugería
+                tanto audacia como familiaridad con procedimientos médicos básicos.
+            </p>
+
+            <h3>Perfiles Psicológicos: El Abismo de la Mente Criminal</h3>
+            <p>Psicológicamente, estos cinco asesinos representan diferentes manifestaciones de la
+                patología criminal.
+                <strong>Bundy</strong> encarnaba al psicópata narcisista perfecto: inteligente, carismático y
+                completamente carente de empatía, capaz de mantener una fachada social impecable mientras
+                cometía
+                atrocidades. <strong>Gein</strong> presentaba un cuadro de esquizofrenia paranoide con obsesión
+                materna extrema, viviendo en un mundo de fantasía donde los límites entre los vivos y los
+                muertos
+                se desdibujaban por completo.<strong>Dahmer</strong> sufría de trastorno límite de la
+                personalidad
+                combinado con parafilias
+                extremas, actuando motivado por un terror patológico al abandono y una necesidad enfermiza de
+                posesión absoluta. <strong>Gacy</strong> exhibía una personalidad antisocial con rasgos
+                narcisistas
+                y una rabia homosexual profundamente reprimida, creando una dicotomía entre su personaje público
+                de "Payaso Pogo" y su yo depredador. <strong>Jack el Destripador</strong>, aunque su perfil
+                sigue
+                siendo especulativo, probablemente combinaba sadismo sexual con misoginia patológica y
+                posiblemente
+                algún trastorno delirante que lo llevaba a verse como una especie de "purificador social".
+            </p>
+
+            <h3>Motivaciones Criminales: Un Análisis Comparativo</h3>
+            <p>Al examinar las motivaciones de estos cinco asesinos seriales, emerge un espectro de
+                patologías psicológicas
+                donde cada uno representa una variación distinta del deseo de control y la externalización de
+                traumas internos.
+                <strong>Ted Bundy</strong> actuaba movido por una rabia narcisista y necesidad de dominio sobre
+                mujeres que
+                representaban ideales sociales inalcanzables, mientras que <strong>Ed Gein</strong> estaba
+                impulsado
+                por
+                una obsesión materna patológica que lo llevaba a buscar literalmente recrear la presencia de su
+                madre a través
+                de la profanación. <strong>Jeffrey Dahmer</strong> representaba la soledad convertida en
+                monstruosidad,
+                matando por un terror patológico al abandono y la necesidad de crear "compañeros" que nunca lo
+                dejarían.
+                <strong>John Wayne Gacy</strong> externalizaba su rabia homosexual reprimida y los abusos de su
+                infancia
+                ejerciendo poder absoluto sobre jóvenes que reflejaban su propia vulnerabilidad, y <strong>Jack
+                    el
+                    Destripador</strong>
+                actuaba desde una misoginia extrema que convertía en misión de "purificación social" contra las
+                prostitutas
+                que representaban todo lo que despreciaba. Aunque sus métodos y víctimas variaban, todos
+                compartían
+                la
+                capacidad de cosificar completamente a sus víctimas y utilizar el asesinato como medio para
+                satisfacer
+                necesidades psicológicas profundamente distorsionadas.
+            </p>
+        </section>
+    </main>
+
+    <!--Pie de pagina-->
+    <footer>
+
+        <p class="footer">&copy; 2025 Analisis de Asesinos en Serie. Todos los derechos Reservados</p>
+        <p class="footer"> Este sitio web tiene fines educativos e informativos.</p>
+
+    </footer>
+</body>
+
+</html>
