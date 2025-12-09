@@ -1,0 +1,60 @@
+// Backgrounds
+$bg-body: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 25%, #16213e 50%, #2d0000 75%, #0a0a0f 100%);
+$bg-h1: linear-gradient(135deg, rgba(139, 0, 0, 0.3) 0%, rgba(26, 26, 46, 0.8) 50%, rgba(139, 0, 0, 0.3) 100%);
+$bg-h2: rgba(26, 26, 46, 0.9);
+$bg-h3: rgba(139, 0, 0, 0.15);
+$nav-bg: rgba(26, 26, 46, 0.95);
+$bg-thead-tabla: rgba(26, 26, 46, 0.9);
+
+// Sombras
+$shadow-h1: 0 0 20px rgba(139, 0, 0, 0.4);
+$nav-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+$shadow-image: 0 8px 25px rgba(139, 0, 0, 0.3);
+
+// Tipografías
+$font-h1: "Bodoni Moda", serif;
+$font-h2: "Instrument Serif", serif;
+$font-h3: "Fascinate Inline", system-ui;
+$font-p: "Amarante", serif;
+$nav-font: "Mouse Memoirs", sans-serif;
+$font-titulo-tabla: "Instrument Serif", serif;
+$font-tabla: "Playwrite NO", cursive;
+
+// Tamaños de fuente
+$size-h1: 4rem;
+$size-h2: 3.2rem;
+$size-h3: 2.8rem;
+$size-intro: 2.2rem;
+$size-inicio: 2.2rem;
+$size-img-descrip: 1.8rem;
+$size-subtitulo: 3.2rem;
+$size-p-grid: 2rem;
+$size-intro-tabla: 2.4rem;
+$size-titulo-tabla: 3.2rem;
+$size-p-tabla: 2rem;
+$size-intro-expedientes: 2.4rem;
+$size-p-grid-expedientes: 2.8rem;
+$size-nav-link: 2.8rem;
+
+// Colores de texto
+$color-h1: #e8e8e8;
+$color-h2: #cd7f32;
+$color-h3: #cd7f32;
+$color-p: #8a8a8a;
+$nav-link-color: #8a8a8a;
+$icon-nav-color: #cd7f32;
+$color-titulo-tabla: #cd7f32;
+$color-p-tabla: #8a8a8a;
+
+// Tamaños de iconos
+$icon-nav-size: 5rem;
+$icon-sub-size: 3rem;
+
+// Espaciado
+$spacing-small: 1rem;
+$spacing-medium: 2rem;
+$spacing-large: 4rem;
+
+// Border radius
+$radius-small: 1rem;
+$radius-medium: 2rem;

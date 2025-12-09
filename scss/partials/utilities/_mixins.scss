@@ -1,0 +1,53 @@
+// Mixins 
+
+// Mixin para flexbox centrado
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Mixin para transiciones suaves
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+    transition: $property $duration $timing;
+}
+
+// Mixin para sombras
+@mixin box-shadow($shadow) {
+    box-shadow: $shadow;
+}
+
+// Mixin para bordes redondeados
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+// Mixin para texto con estilo común
+@mixin text-style($size, $color, $line-height: normal) {
+    font-size: $size;
+    color: $color;
+    @if $line-height != normal {
+        line-height: $line-height;
+    }
+}
+
+// Mixin para background 
+@mixin section-bg($bg-color, $padding: 2rem, $margin: 2rem auto) {
+    background-color: $bg-color;
+    padding: $padding;
+    margin: $margin;
+}
+
+// Mixin para grid 
+@mixin grid-layout($columns, $gap: 2rem) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+}
+
+// Mixin para iconos 
+@mixin icon-size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
