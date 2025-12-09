@@ -1,0 +1,35 @@
+@use "../../utilities/variables" as v;
+@use "../../utilities/mixins" as m;
+@use "../../utilities/placeholders" as *;
+
+/* Estilos de tipografía globales */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+h1 {
+  @extend %heading-base;
+  font-family: v.$font-h1;
+  @include m.text-style(v.$size-h1, v.$color-h1);
+  background: v.$bg-h1;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  font-family: v.$font-h2;
+  @include m.text-style(v.$size-h2, v.$color-h2);
+  @include m.section-bg(v.$bg-h2, v.$spacing-small, v.$spacing-medium 4rem);
+  border-bottom: 1px solid v.$color-saddle-brown;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: v.$font-h3;
+}
+
+p {
+  font-family: v.$font-p;
+}

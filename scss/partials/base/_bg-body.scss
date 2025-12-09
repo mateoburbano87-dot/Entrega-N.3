@@ -1,0 +1,9 @@
+@use "../../utilities/variables" as v;
+
+/* Estilo del fondo de la página */
+
+body {
+  background: v.$bg-body;
+  background-attachment: fixed;
+  background-size: cover;
+}
