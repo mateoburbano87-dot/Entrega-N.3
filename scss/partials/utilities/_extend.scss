@@ -12,7 +12,6 @@
 
 // Extends grid de características
 
-
 %grid-card-base {
   @include mixins.section-bg(variables.$bg-h2);
   @include mixins.border-radius(variables.$radius-small);
