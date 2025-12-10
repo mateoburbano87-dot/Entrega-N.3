@@ -112,6 +112,17 @@ footer {
   padding: 0.5rem 1rem;
 }
 
+.nav-link-custom {
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+.nav-link-custom.active {
+  color: #8a8a8a;
+}
+
 .nav-ul {
   display: flex;
   flex-direction: row;

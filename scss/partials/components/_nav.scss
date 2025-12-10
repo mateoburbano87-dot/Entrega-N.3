@@ -39,6 +39,18 @@
     padding: 0.5rem variables.$spacing-small;
 }
 
+// Clase para los enlaces de navegación personalizados
+.nav-link-custom {
+    font-family: variables.$nav-font;
+    @include mixins.text-style(variables.$size-nav-link, variables.$nav-link-color);
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    
+    &.active {
+        color: variables.$nav-link-color;
+    }
+}
+
 .nav-ul {
     @include mixins.flex-center(row, center, center);
 
@@ -54,3 +66,4 @@
     margin-right: variables.$spacing-small;
     vertical-align: middle;
 }
+
