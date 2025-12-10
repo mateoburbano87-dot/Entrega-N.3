@@ -19,14 +19,15 @@
         @include mixins.border-radius(variables.$radius-small);
         border: 2px solid variables.$color-border;
         grid-column: 2 / 3;
-        justify-self: center;
-        align-self: center;
+        display: block;
+        margin: 0 auto;
     }
 }
 
 .intro {
     font-family: variables.$font-p;
     @include mixins.text-style(variables.$size-intro, variables.$color-p, 1.8);
+    @include mixins.border-radius(variables.$radius-medium);
     text-align: justify;
     padding: variables.$spacing-small;
     max-width: 100rem;
@@ -87,6 +88,7 @@
 .grid-motivaciones {
     @include mixins.grid-card-styles;
 }
+
 
 
 
