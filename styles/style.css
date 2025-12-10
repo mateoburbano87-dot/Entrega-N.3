@@ -76,4 +76,59 @@ footer {
   margin: 0.5rem 0;
 }
 
+/* Estilos de la barra de navegación */
+.nav-bg {
+  background-color: rgba(26, 26, 46, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+.nav-bg a {
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+.links-nav {
+  margin: 0 1.5rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.links-nav:hover {
+  border-bottom: 1px solid #8b0000;
+}
+
+.nav-brand-custom {
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-ul .nav-li {
+  flex: 1;
+  text-align: center;
+}
+
+.icon-nav {
+  color: #cd7f32;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 /*# sourceMappingURL=style.css.map */

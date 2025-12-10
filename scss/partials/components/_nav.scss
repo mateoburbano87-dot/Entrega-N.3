@@ -1,0 +1,56 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+/* Estilos de la barra de navegación */
+
+.nav-bg {
+    background-color: variables.$nav-bg;
+    @include mixins.box-shadow(variables.$nav-shadow);
+    @include mixins.border-radius(variables.$radius-medium);
+    padding: variables.$spacing-small variables.$spacing-medium;
+    margin: 0 auto;
+
+    a {
+        font-family: variables.$nav-font;
+        @include mixins.text-style(variables.$size-nav-link, variables.$nav-link-color);
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+    }
+}
+
+.links-nav {
+    margin: 0 1.5rem;
+    padding: 0.5rem variables.$spacing-small;
+    border-bottom: 1px solid transparent;
+    @include mixins.transition(border-color);
+
+    &:hover {
+        border-bottom: 1px solid variables.$border-nav;
+    }
+}
+
+// Clase específica para el brand
+.nav-brand-custom {
+    font-family: variables.$nav-font;
+    @include mixins.text-style(variables.$size-nav-link, variables.$nav-link-color);
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    padding: 0.5rem variables.$spacing-small;
+}
+
+.nav-ul {
+    @include mixins.flex-center(row, center, center);
+
+    .nav-li {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+.icon-nav {
+    color: variables.$icon-nav-color;
+    @include mixins.icon-size(variables.$icon-nav-size);
+    margin-right: variables.$spacing-small;
+    vertical-align: middle;
+}
