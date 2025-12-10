@@ -45,6 +45,9 @@
     @include mixins.text-style(variables.$size-nav-link, variables.$nav-link-color);
     letter-spacing: 0.1rem;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     
     &.active {
         color: variables.$nav-link-color;
@@ -53,10 +56,16 @@
 
 .nav-ul {
     @include mixins.flex-center(row, center, center);
+    width: 100%;
+    list-style: none;
+    gap: 1rem;
 
     .nav-li {
-        flex: 1;
+        flex: 0 1 auto;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
