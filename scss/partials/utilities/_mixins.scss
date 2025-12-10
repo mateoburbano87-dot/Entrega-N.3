@@ -51,3 +51,19 @@
     width: $width;
     height: $height;
 }
+
+// Mixin para estilos de enlaces de navegación
+@mixin nav-link-base($font, $size, $color) {
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+// Mixin para centrado de elementos inline
+@mixin inline-flex-center {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

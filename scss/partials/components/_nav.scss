@@ -1,5 +1,6 @@
 @use "../utilities/variables";
 @use "../utilities/mixins";
+@use "../utilities/extend";
 
 /* Estilos de la barra de navegación */
 
@@ -11,16 +12,12 @@
     margin: 0 auto;
 
     a {
-        font-family: variables.$nav-font;
-        @include mixins.text-style(variables.$size-nav-link, variables.$nav-link-color);
-        letter-spacing: 0.1rem;
-        text-decoration: none;
+        @include mixins.nav-link-base(variables.$nav-font, variables.$size-nav-link, variables.$nav-link-color);
     }
 }
 
 .links-nav {
-    margin: 0 1.5rem;
-    padding: 0.5rem variables.$spacing-small;
+    @extend %nav-link-base;
     border-bottom: 1px solid transparent;
     @include mixins.transition(border-color);
 
@@ -31,23 +28,13 @@
 
 // Clase específica para el brand
 .nav-brand-custom {
-    font-family: variables.$nav-font;
-    @include mixins.text-style(variables.$size-nav-link, variables.$nav-link-color);
-    letter-spacing: 0.1rem;
-    text-decoration: none;
-    margin: 0 1.5rem;
-    padding: 0.5rem variables.$spacing-small;
+    @extend %nav-link-base;
 }
 
 // Clase para los enlaces de navegación personalizados
 .nav-link-custom {
-    font-family: variables.$nav-font;
-    @include mixins.text-style(variables.$size-nav-link, variables.$nav-link-color);
-    letter-spacing: 0.1rem;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    @extend %nav-link-base;
+    @extend %nav-flex-center;
     
     &.active {
         color: variables.$nav-link-color;
@@ -61,11 +48,9 @@
     gap: 1rem;
 
     .nav-li {
-        flex: 0 1 auto;
+        flex: 1;
         text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %nav-flex-center;
     }
 }
 
@@ -75,4 +60,5 @@
     margin-right: variables.$spacing-small;
     vertical-align: middle;
 }
+
 

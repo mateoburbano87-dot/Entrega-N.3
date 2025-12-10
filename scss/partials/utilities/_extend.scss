@@ -91,4 +91,16 @@
   }
 }
 
+// Extends para navegación
+
+%nav-link-base {
+  @include mixins.nav-link-base(variables.$nav-font, variables.$size-nav-link, variables.$nav-link-color);
+  margin: 0 1.5rem;
+  padding: 0.5rem variables.$spacing-small;
+}
+
+%nav-flex-center {
+  @include mixins.inline-flex-center;
+}
+
 

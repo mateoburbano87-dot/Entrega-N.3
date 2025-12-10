@@ -12,6 +12,22 @@ h1 {
   border-radius: 1rem;
 }
 
+.links-nav, .nav-brand-custom, .nav-link-custom {
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link-custom, .nav-ul .nav-li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -93,8 +109,6 @@ footer {
 }
 
 .links-nav {
-  margin: 0 1.5rem;
-  padding: 0.5rem 1rem;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
 }
@@ -102,26 +116,6 @@ footer {
   border-bottom: 1px solid #8b0000;
 }
 
-.nav-brand-custom {
-  font-family: "Mouse Memoirs", sans-serif;
-  font-size: 2.8rem;
-  color: #8a8a8a;
-  letter-spacing: 0.1rem;
-  text-decoration: none;
-  margin: 0 1.5rem;
-  padding: 0.5rem 1rem;
-}
-
-.nav-link-custom {
-  font-family: "Mouse Memoirs", sans-serif;
-  font-size: 2.8rem;
-  color: #8a8a8a;
-  letter-spacing: 0.1rem;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
 .nav-link-custom.active {
   color: #8a8a8a;
 }
@@ -136,11 +130,8 @@ footer {
   gap: 1rem;
 }
 .nav-ul .nav-li {
-  flex: 0 1 auto;
+  flex: 1;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .icon-nav {
