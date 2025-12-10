@@ -2,7 +2,7 @@
 
 // Mixins 
 
-// Mixin para flexbox centrado
+// Mixin para centrar con flexbox 
 @mixin flex-center($direction: row, $justify: center, $align: center) {
     display: flex;
     flex-direction: $direction;
@@ -20,12 +20,12 @@
     box-shadow: $shadow;
 }
 
-// Mixin para bordes redondeados
+// Mixin para bordes 
 @mixin border-radius($radius) {
     border-radius: $radius;
 }
 
-// Mixin para texto con estilo común
+// Mixin para texto 
 @mixin text-style($size, $color, $line-height: normal) {
     font-size: $size;
     color: $color;
@@ -34,7 +34,7 @@
     }
 }
 
-// Mixin para background 
+// Mixin para bg
 @mixin section-bg($bg-color, $padding: 2rem, $margin: 2rem auto) {
     background-color: $bg-color;
     padding: $padding;
@@ -48,13 +48,13 @@
     gap: $gap;
 }
 
-// Mixin para iconos 
+// Mixin para tamaño de icons
 @mixin icon-size($width, $height: $width) {
     width: $width;
     height: $height;
 }
 
-// Mixin para estilos de enlaces de nav
+// Estilos base para los enlaces de navegación
 @mixin nav-link-base($font, $size, $color) {
     font-family: $font;
     font-size: $size;
@@ -63,14 +63,14 @@
     text-decoration: none;
 }
 
-// Mixin para centrado de elementos inline
+// Centrar elementos usando inline-flex
 @mixin inline-flex-center {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-// Mixin para tarjetas de grid
+// Estilos para las tarjetas del grid de características
 @mixin grid-card-styles {
     background-color: variables.$bg-h2;
     padding: 2rem;
