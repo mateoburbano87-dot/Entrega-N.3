@@ -1,0 +1,90 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extend";
+
+/* Estilos para la página lado oscuro */
+
+/* Estilos para la sección de introducción y el grid de características */
+
+.container-intro {
+    @include mixins.grid-layout(60rem 50rem, 0 2rem);
+    grid-template-rows: 60rem 30rem;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+
+    img {
+        width: 85%;
+        @include mixins.box-shadow(variables.$shadow-image);
+        @include mixins.border-radius(variables.$radius-small);
+        border: 2px solid variables.$color-border;
+        grid-column: 2 / 3;
+    }
+}
+
+.intro {
+    font-family: variables.$font-p;
+    @include mixins.text-style(variables.$size-intro, variables.$color-p, 1.8);
+    text-align: justify;
+    padding: variables.$spacing-small;
+    max-width: 100rem;
+    grid-row: 2 / 3;
+}
+
+.img-descrip {
+    font-family: variables.$font-p;
+    @include mixins.text-style(variables.$size-img-descrip, variables.$color-h2);
+    text-align: center;
+    background-color: variables.$bg-h2;
+    padding: 0.5rem;
+    margin-top: variables.$spacing-medium;
+    grid-column: 2 / 3;
+}
+
+.inicio {
+    grid-row: span 2;
+    grid-column: 2;
+    font-family: variables.$font-p;
+    @include mixins.text-style(variables.$size-inicio, variables.$color-p, 1.6);
+    text-align: justify;
+    padding: variables.$spacing-small;
+    max-width: 100rem;
+}
+
+/* Estilos para el grid de características */
+
+.subtitulo {
+    font-family: variables.$font-h2;
+    @include mixins.text-style(variables.$size-subtitulo, variables.$color-h2);
+    text-align: center;
+    text-transform: capitalize;
+    @include mixins.section-bg(variables.$bg-h2, variables.$spacing-small, 0 auto);
+    border-bottom: 1px solid variables.$color-border;
+    @include mixins.border-radius(variables.$radius-medium);
+    width: 50rem;
+}
+
+.grid-caracteristicas {
+    @include mixins.grid-layout(1fr 1fr);
+    grid-template-rows: repeat(3, auto);
+    max-width: 120rem;
+    margin: variables.$spacing-medium auto;
+}
+
+.icon-sub {
+    @include mixins.icon-size(variables.$icon-sub-size);
+    color: variables.$icon-nav-color;
+    margin-right: variables.$spacing-small;
+    vertical-align: middle;
+}
+
+/* Aplicar estilos de grid card */
+.grid-perfil,
+.grid-metodos,
+.grid-seleccion,
+.grid-motivaciones {
+    @include mixins.grid-card-styles;
+}
+
+
+

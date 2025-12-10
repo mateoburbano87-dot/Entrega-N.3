@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+
 // Mixins 
 
 // Mixin para flexbox centrado
@@ -66,4 +68,29 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+// Mixin para tarjetas de grid
+@mixin grid-card-styles {
+    background-color: variables.$bg-h2;
+    padding: 2rem;
+    margin: 2rem auto;
+    @include border-radius(variables.$radius-small);
+    @include box-shadow(0 4px 12px rgba(0, 0, 0, 0.6));
+
+    h3 {
+        font-family: variables.$font-h3;
+        @include text-style(variables.$size-h3, variables.$color-h3);
+        text-align: center;
+        background: variables.$bg-h2;
+        padding: variables.$spacing-small;
+        @include border-radius(0.5rem);
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-family: variables.$font-p;
+        @include text-style(variables.$size-p-grid, variables.$color-p, 1.6);
+        text-align: justify;
+    }
 }
