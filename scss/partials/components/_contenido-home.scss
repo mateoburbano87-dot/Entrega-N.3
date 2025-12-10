@@ -19,6 +19,8 @@
         @include mixins.border-radius(variables.$radius-small);
         border: 2px solid variables.$color-border;
         grid-column: 2 / 3;
+        justify-self: center;
+        align-self: center;
     }
 }
 
