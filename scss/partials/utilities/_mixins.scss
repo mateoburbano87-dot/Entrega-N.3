@@ -52,7 +52,7 @@
     height: $height;
 }
 
-// Mixin para estilos de enlaces de navegación
+// Mixin para estilos de enlaces de nav
 @mixin nav-link-base($font, $size, $color) {
     font-family: $font;
     font-size: $size;
