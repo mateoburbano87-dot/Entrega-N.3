@@ -54,7 +54,7 @@
     height: $height;
 }
 
-// Estilos base para los enlaces de navegación
+// Mixin para los enlaces de navegación
 @mixin nav-link-base($font, $size, $color) {
     font-family: $font;
     font-size: $size;
@@ -63,14 +63,14 @@
     text-decoration: none;
 }
 
-// Centrar elementos usando inline-flex
+// Mixin para centrar elementos 
 @mixin inline-flex-center {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-// Estilos para las tarjetas del grid de características
+// Mixin para las tarjetas del grid de características
 @mixin grid-card-styles {
     background-color: variables.$bg-h2;
     padding: 2rem;
