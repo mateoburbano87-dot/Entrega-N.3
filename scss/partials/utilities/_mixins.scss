@@ -29,7 +29,7 @@
 @mixin text-style($size, $color, $line-height: normal) {
     font-size: $size;
     color: $color;
-    @if $line-height != normal {
+    @if $line-height == normal {
         line-height: $line-height;
     }
 }
