@@ -1,9 +1,9 @@
-@use "../../utilities/variables" as v;
+@use "../utilities/variables";
 
 /* Estilo del fondo de la página */
 
 body {
-  background: v.$bg-body;
+  background: variables.$bg-body;
   background-attachment: fixed;
   background-size: cover;
 }

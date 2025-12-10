@@ -1,18 +1,18 @@
-@use "../../utilities/variables" as v;
-@use "../../utilities/mixins" as m;
+@use "../utilities/variables";
+@use "../utilities/mixins";
 
 footer {
-    background-color: v.$nav-bg;
-    @include m.box-shadow(0 -4px 12px v.$nav-shadow);
-    @include m.border-radius(v.$radius-medium);
+    background-color: variables.$nav-bg;
+    @include mixins.box-shadow(0 -4px 12px variables.$nav-shadow);
+    @include mixins.border-radius(variables.$radius-medium);
     text-align: center;
-    padding: v.$spacing-medium v.$spacing-small;
-    margin: 4rem auto v.$spacing-medium auto;
+    padding: variables.$spacing-medium variables.$spacing-small;
+    margin: 4rem auto variables.$spacing-medium auto;
     width: 150rem;
     border-top: 1px solid rgba(139, 69, 19, 0.8);
 }
 
 .footer {
-    @include m.text-style(2.4rem, v.$color-p);
+    @include mixins.text-style(2.4rem, variables.$color-p);
     margin: 0.5rem 0;
 }

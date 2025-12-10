@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap");
+h1 {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 2rem 6rem;
+  border-radius: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Estilos de tipografía globales */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 4rem;
+  color: #e8e8e8;
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.3) 0%, rgba(26, 26, 46, 0.8) 50%, rgba(139, 0, 0, 0.3) 100%);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  font-family: "Instrument Serif", serif;
+  font-size: 3.2rem;
+  color: #cd7f32;
+  background-color: rgba(26, 26, 46, 0.9);
+  padding: 1rem;
+  margin: 2rem 4rem;
+  border-bottom: 1px solid #8b4513;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: "Fascinate Inline", system-ui;
+}
+
+p {
+  font-family: "Amarante", serif;
+}
+
+/* Estilo del fondo de la página */
+body {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 25%, #16213e 50%, #2d0000 75%, #0a0a0f 100%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+footer {
+  background-color: rgba(26, 26, 46, 0.95);
+  box-shadow: 0 -4px 12px 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 4rem auto 2rem auto;
+  width: 150rem;
+  border-top: 1px solid rgba(139, 69, 19, 0.8);
+}
+
+.footer {
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  margin: 0.5rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */
