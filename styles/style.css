@@ -168,7 +168,7 @@ footer {
 
 .intro {
   font-family: "Amarante", serif;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #8a8a8a;
   border-radius: 2rem;
   text-align: justify;
@@ -193,7 +193,7 @@ footer {
   grid-row: span 2;
   grid-column: 2;
   font-family: "Amarante", serif;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   color: #8a8a8a;
   text-align: justify;
   padding: 1rem;
