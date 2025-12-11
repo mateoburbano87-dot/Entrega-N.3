@@ -1,0 +1,38 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extend";
+
+/* Estilos pagina archivos */
+
+.intro-tabla {
+    @include mixins.text-style(variables.$size-intro-tabla, variables.$color-p, 1.6);
+    text-align: justify;
+    margin: variables.$spacing-medium auto;
+    width: 170rem;
+}
+
+/* Estilos tabla archivos */
+
+.titulo-tabla {
+    @include mixins.text-style(variables.$size-titulo-tabla, variables.$color-titulo-tabla);
+    background: rgba(26, 26, 46, 0.9);
+    border-bottom: 1px solid #8b4513;
+    padding: variables.$spacing-small;
+    margin: 0 auto variables.$spacing-medium auto;
+    width: 170rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.tabla-archivos {
+    @extend %tabla-base;
+
+    thead {
+        color: #cd7f32;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: rgba(26, 26, 46, 0.8);
+    }
+}
+

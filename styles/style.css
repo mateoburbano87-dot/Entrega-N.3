@@ -28,6 +28,27 @@ h1 {
   justify-content: center;
 }
 
+.tabla-archivos {
+  width: 170rem;
+  margin: 2rem auto 6rem auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.tabla-archivos th,
+.tabla-archivos td {
+  font-size: 2rem;
+  color: #8a8a8a;
+  line-height: normal;
+  padding: 1.5rem;
+  text-align: center;
+}
+.tabla-archivos thead {
+  background: rgba(26, 26, 46, 0.9);
+  color: #cd7f32;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -266,6 +287,36 @@ footer {
   font-size: 2rem;
   color: #8a8a8a;
   text-align: justify;
+}
+
+/* Estilos pagina archivos */
+.intro-tabla {
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  text-align: justify;
+  margin: 2rem auto;
+  width: 170rem;
+}
+
+/* Estilos tabla archivos */
+.titulo-tabla {
+  font-size: 3.2rem;
+  color: #cd7f32;
+  line-height: normal;
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px solid #8b4513;
+  padding: 1rem;
+  margin: 0 auto 2rem auto;
+  width: 170rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.tabla-archivos thead {
+  color: #cd7f32;
+}
+.tabla-archivos tbody tr:nth-child(even) {
+  background-color: rgba(26, 26, 46, 0.8);
 }
 
 /*# sourceMappingURL=style.css.map */
