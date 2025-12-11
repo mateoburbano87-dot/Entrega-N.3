@@ -67,6 +67,7 @@
 
   th,
   td {
+    font-family: variables.$font-tabla;
     @include mixins.text-style(variables.$size-p-tabla, variables.$color-p-tabla);
     padding: 1.5rem;
     text-align: center;

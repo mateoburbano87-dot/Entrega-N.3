@@ -1,0 +1,57 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extend";
+
+/* Estilos pagina Patrones de Crimen */
+
+.intro-patrones {
+    @include mixins.text-style(variables.$size-intro-tabla, variables.$color-p-tabla, 1.6);
+    text-align: justify;
+    margin: variables.$spacing-medium auto;
+    width: 170rem;
+    strong{
+        color: variables.$color-h2;
+    }
+}
+
+.tabla-patrones {
+    @extend %tabla-base;
+
+    tbody tr:hover {
+        background-color: rgba(139, 0, 0, 0.3);
+    }
+}
+
+.seccion-comparacion {
+    h2 {
+        @include mixins.text-style(3.2rem, variables.$color-h2);
+        background: variables.$bg-h2;
+        border-bottom: 1px solid #8b4513;
+        @include mixins.border-radius(variables.$radius-medium);
+        padding: variables.$spacing-small;
+        margin: variables.$spacing-medium auto;
+        width: 50rem;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    h3 {
+        @include mixins.text-style(2.8rem, variables.$color-h3);
+        background: variables.$bg-h2;
+        padding: variables.$spacing-small;
+        @include mixins.border-radius(0.5rem);
+        margin-bottom: 1.5rem;
+        margin-left: variables.$spacing-medium;
+        text-align: center;
+        max-width: fit-content;
+    }
+
+    p {
+        @include mixins.text-style(2.4rem, variables.$color-p, 1.6);
+        text-align: justify;
+        margin: variables.$spacing-small 3rem 3rem;
+          strong{
+        color: variables.$color-h2;
+    }
+    }
+}

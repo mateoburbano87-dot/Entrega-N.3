@@ -28,23 +28,25 @@ h1 {
   justify-content: center;
 }
 
-.tabla-archivos {
+.tabla-patrones, .tabla-archivos {
   width: 170rem;
   margin: 2rem auto 6rem auto;
   border-collapse: collapse;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
-  overflow: hidden; 
+  overflow: hidden;
 }
-.tabla-archivos th,
+.tabla-patrones th, .tabla-archivos th,
+.tabla-patrones td,
 .tabla-archivos td {
+  font-family: "Playwrite NO", cursive;
   font-size: 2rem;
   color: #8a8a8a;
   line-height: normal;
   padding: 1.5rem;
   text-align: center;
 }
-.tabla-archivos thead {
+.tabla-patrones thead, .tabla-archivos thead {
   background: rgba(26, 26, 46, 0.9);
   color: #cd7f32;
 }
@@ -317,6 +319,57 @@ footer {
 }
 .tabla-archivos tbody tr:nth-child(even) {
   background-color: rgba(26, 26, 46, 0.8);
+}
+
+/* Estilos pagina Patrones de Crimen */
+.intro-patrones {
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  text-align: justify;
+  margin: 2rem auto;
+  width: 170rem;
+}
+.intro-patrones strong {
+  color: #cd7f32;
+}
+
+.tabla-patrones tbody tr:hover {
+  background-color: rgba(139, 0, 0, 0.3);
+}
+
+.seccion-comparacion h2 {
+  font-size: 3.2rem;
+  color: #cd7f32;
+  line-height: normal;
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px solid #8b4513;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 50rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.seccion-comparacion h3 {
+  font-size: 2.8rem;
+  color: #cd7f32;
+  line-height: normal;
+  background: rgba(26, 26, 46, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  text-align: center;
+  max-width: fit-content;
+}
+.seccion-comparacion p {
+  font-size: 2.4rem;
+  color: #8a8a8a;
+  text-align: justify;
+  margin: 1rem 3rem 3rem;
+}
+.seccion-comparacion p strong {
+  color: #cd7f32;
 }
 
 /*# sourceMappingURL=style.css.map */
