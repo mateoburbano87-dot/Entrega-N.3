@@ -9,7 +9,8 @@
     text-align: justify;
     margin: variables.$spacing-medium auto;
     width: 170rem;
-    strong{
+
+    strong {
         color: variables.$color-h2;
     }
 }
@@ -50,8 +51,9 @@
         @include mixins.text-style(2.4rem, variables.$color-p, 1.6);
         text-align: justify;
         margin: variables.$spacing-small 3rem 3rem;
-          strong{
-        color: variables.$color-h2;
-    }
+
+        strong {
+            color: variables.$color-h2;
+        }
     }
 }
