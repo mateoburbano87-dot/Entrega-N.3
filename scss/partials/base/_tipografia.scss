@@ -10,12 +10,12 @@ html {
 }
 
 h1 {
-  @extend %heading-base;
   font-family: variables.$font-h1;
   @include mixins.text-style(variables.$size-h1, variables.$color-h1);
   background: variables.$bg-h1;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+  @extend %heading-base;
 }
 
 h2 {
@@ -33,3 +33,4 @@ h3 {
 p {
   font-family: variables.$font-p;
 }
+

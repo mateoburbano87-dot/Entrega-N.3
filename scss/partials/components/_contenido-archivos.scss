@@ -25,8 +25,6 @@
 }
 
 .tabla-archivos {
-    @extend %tabla-base;
-
     thead {
         color: #cd7f32;
     }
@@ -34,5 +32,7 @@
     tbody tr:nth-child(even) {
         background-color: rgba(26, 26, 46, 0.8);
     }
+    
+    @extend %tabla-base;
 }
 

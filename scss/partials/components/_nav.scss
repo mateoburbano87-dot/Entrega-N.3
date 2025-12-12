@@ -17,9 +17,9 @@
 }
 
 .links-nav {
-    @extend %nav-link-base;
     border-bottom: 1px solid transparent;
     @include mixins.transition(border-color);
+    @extend %nav-link-base;
 
     &:hover {
         border-bottom: 1px solid variables.$border-nav;
@@ -33,12 +33,12 @@
 
 // Clase para los enlaces de navegación personalizados
 .nav-link-custom {
-    @extend %nav-link-base;
-    @extend %nav-flex-center;
-    
     &.active {
         color: variables.$nav-link-color;
     }
+    
+    @extend %nav-link-base;
+    @extend %nav-flex-center;
 }
 
 .nav-ul {
