@@ -34,6 +34,60 @@ h1 {
   justify-content: center;
 }
 
+.bundy-container,
+.gein-container,
+.dahmer-container,
+.gacy-container,
+.jack-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  gap: 0;
+  grid-template-rows: 10rem 60rem 7rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+.bundy-container h3,
+.gein-container h3,
+.dahmer-container h3,
+.gacy-container h3,
+.jack-container h3 {
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  line-height: normal;
+  background: rgba(139, 0, 0, 0.15);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contenedor-img-bundy,
+.contenedor-img-gein,
+.contenedor-img-dahmer,
+.contenedor-img-gacy,
+.contenedor-img-jack {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-titulo-bundy,
+.grid-titulo-gein,
+.grid-titulo-dahmer,
+.grid-titulo-gacy,
+.grid-titulo-jack {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 2rem;
+  padding: auto;
+  justify-self: center;
+  align-self: center;
+}
+
 .tabla-patrones, .tabla-archivos {
   width: 170rem;
   margin: 2rem auto 6rem auto;
@@ -371,5 +425,81 @@ footer {
 .seccion-comparacion p strong {
   color: #cd7f32;
 }
+
+/* Estilos para la pagina expedientes */
+.intro-expedientes {
+  font-size: 2.6rem;
+  color: #8a8a8a;
+  text-align: justify;
+  margin: 2rem auto;
+  width: 170rem;
+}
+
+.subtitulo {
+  font-size: 3rem;
+  color: #cd7f32;
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px solid #dcdcdc;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  text-align: center;
+  text-transform: capitalize;
+  width: 50rem;
+  height: 8.5rem;
+}
+
+img {
+  margin: 1rem auto;
+  border-radius: 2rem;
+  background-color: rgba(26, 26, 46, 0.9);
+  border: 1px solid #8b4513;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion-img {
+  font-size: 1.8rem;
+  color: #cd7f32;
+  line-height: normal;
+  background-color: rgba(26, 26, 46, 0.9);
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.p4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 2.6rem;
+  color: #8a8a8a;
+  text-align: justify;
+  padding: 1rem;
+  max-width: 100rem;
+}
+
+.p4-grid {
+  grid-column: 1/-1;
+  grid-row: 4;
+  font-size: 2.8rem;
+  color: #8a8a8a;
+  text-align: justify;
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
+.subtitulo.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 3;
+  margin: 2rem auto;
+}
+
+/* Extend para contenedores de asesinos */
+/* Contenedores de imágenes */
+/* Títulos de grid */
 
 /*# sourceMappingURL=style.css.map */

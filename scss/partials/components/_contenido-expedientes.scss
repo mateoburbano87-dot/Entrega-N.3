@@ -1,0 +1,100 @@
+
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/extend";
+
+/* Estilos para la pagina expedientes */
+
+.intro-expedientes {
+    @include mixins.text-style(variables.$size-intro-expedientes, variables.$color-p, 1.6);
+    text-align: justify;
+    margin: variables.$spacing-medium auto;
+    width: 170rem;
+}
+
+.subtitulo {
+    font-size: 3rem;
+    color: variables.$color-h2;
+    background: variables.$bg-h2;
+    border-bottom: 1px solid #dcdcdc;
+    @include mixins.border-radius(variables.$radius-medium);
+    padding: variables.$spacing-small;
+    margin: variables.$spacing-medium auto;
+    text-align: center;
+    text-transform: capitalize;
+    width: 50rem;
+    height: 8.5rem;
+}
+
+img {
+    margin: variables.$spacing-small auto;
+    @include mixins.border-radius(variables.$radius-medium);
+    background-color: variables.$bg-h2;
+    border: 1px solid variables.$color-border;
+    @include mixins.box-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.descripcion-img {
+    @include mixins.text-style(variables.$size-img-descrip, variables.$color-h2);
+    background-color: variables.$bg-h2;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: variables.$spacing-small;
+    @include mixins.border-radius(variables.$spacing-small);
+}
+
+.p4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    @include mixins.text-style(variables.$size-intro-expedientes, variables.$color-p, 1.6);
+    text-align: justify;
+    padding: variables.$spacing-small;
+    max-width: 100rem;
+}
+
+.p4-grid {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    @include mixins.text-style(variables.$size-p-grid-expedientes, variables.$color-p, 1.6);
+    text-align: justify;
+    padding: variables.$spacing-small;
+    margin: variables.$spacing-medium auto;
+}
+
+.subtitulo.grid {
+    @include mixins.flex-center;
+    grid-column: 1 / 2;
+    grid-row: 3;
+    margin: variables.$spacing-medium auto;
+}
+
+/* Extend para contenedores de asesinos */
+.bundy-container,
+.gein-container,
+.dahmer-container,
+.gacy-container,
+.jack-container {
+    @extend %expediente-container;
+}
+
+/* Contenedores de imágenes */
+.contenedor-img-bundy,
+.contenedor-img-gein,
+.contenedor-img-dahmer,
+.contenedor-img-gacy,
+.contenedor-img-jack {
+    @extend %contenedor-img;
+}
+
+/* Títulos de grid */
+.grid-titulo-bundy,
+.grid-titulo-gein,
+.grid-titulo-dahmer,
+.grid-titulo-gacy,
+.grid-titulo-jack {
+    @extend %grid-titulo;
+}
+
+
+
+
