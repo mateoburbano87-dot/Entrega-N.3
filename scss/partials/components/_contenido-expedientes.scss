@@ -24,6 +24,9 @@
     text-transform: capitalize;
     width: 50rem;
     height: 8.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 img {
@@ -68,7 +71,7 @@ img {
     margin: variables.$spacing-medium auto;
 }
 
-/* Extend para contenedores de asesinos */
+// Extend para contenedores de asesinos 
 .bundy-container,
 .gein-container,
 .dahmer-container,
@@ -77,7 +80,7 @@ img {
     @extend %expediente-container;
 }
 
-/* Contenedores de imágenes */
+// Extend para contenedores de imágenes 
 .contenedor-img-bundy,
 .contenedor-img-gein,
 .contenedor-img-dahmer,
@@ -86,7 +89,7 @@ img {
     @extend %contenedor-img;
 }
 
-/* Títulos de grid */
+// Extend para títulos de grid 
 .grid-titulo-bundy,
 .grid-titulo-gein,
 .grid-titulo-dahmer,
