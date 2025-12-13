@@ -1,0 +1,372 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+/* Media Queries */
+
+/*Tablets grandes*/
+@media screen and (max-width: 1200px) {
+    // hago todo un poco mas chico
+    .nav-bg,
+    footer,
+    .intro-tabla,
+    .intro-patrones,
+    .intro-expedientes,
+    .p5,
+    .tabla-archivos,
+    .tabla-patrones,
+    .titulo-tabla {
+        width: 95%;
+    }
+
+    @include mixins.nav-vertical();
+    
+    .container-intro {
+        @include mixins.grid-layout(1fr 1fr, 2rem);
+        grid-template-rows: auto auto;
+
+        img {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+    
+    .inicio {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .intro {
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+    
+    .bundy-container,
+    .gein-container,
+    .dahmer-container,
+    .gacy-container,
+    .jack-container {
+        @include mixins.expediente-container-responsive(1fr 1fr, 1.5rem);
+        grid-template-rows: auto auto auto;
+    }
+
+    .contenedor-img-bundy,
+    .contenedor-img-gein,
+    .contenedor-img-dahmer,
+    .contenedor-img-gacy,
+    .contenedor-img-jack {
+        @include mixins.expediente-img-position();
+    }
+    
+    .p4 {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 2rem;
+    }
+    
+    .subtitulo-grid {
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+    
+    .p4-grid {
+        grid-column: 1 / 3;
+        grid-row: 4;
+    }
+}
+
+/* Tablets normales */
+@media screen and (max-width: 1024px) {
+    .nav-bg,
+    footer {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    @include mixins.nav-vertical();
+
+    h1 {
+        @include mixins.text-responsive(3rem);
+        margin: variables.$spacing-medium;
+        padding: 1.5rem;
+    }
+
+    .subtitulo,
+    .sub2,
+    .titulo-tabla {
+        @include mixins.text-responsive(2.8rem, 80%);
+    }
+
+    .grid-caracteristicas {
+        @include mixins.grid-layout(1fr, 1.5rem);
+        max-width: 90%;
+    }
+
+    .container-intro {
+        @include mixins.grid-layout(1fr, 2rem);
+        grid-template-rows: auto auto auto;
+        margin: variables.$spacing-medium auto;
+
+        img {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+
+    .inicio {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .intro {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .intro-tabla,
+    .intro-patrones,
+    .intro-expedientes,
+    .p5,
+    .tabla-archivos,
+    .tabla-patrones,
+    .titulo-tabla {
+        @include mixins.text-responsive(2rem, 95%);
+    }
+
+    .bundy-container,
+    .gein-container,
+    .dahmer-container,
+    .gacy-container,
+    .jack-container {
+        @include mixins.expediente-container-responsive(1fr, 1rem);
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .contenedor-img-bundy,
+    .contenedor-img-gein,
+    .contenedor-img-dahmer,
+    .contenedor-img-gacy,
+    .contenedor-img-jack {
+        @include mixins.expediente-img-position();
+    }
+
+    .p4 {
+        grid-column: 1;
+        grid-row: 3;
+        @include mixins.text-responsive(2rem);
+    }
+
+    .subtitulo-grid {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .p4-grid {
+        grid-column: 1;
+        grid-row: 5;
+        @include mixins.text-responsive(2.2rem);
+    }
+
+    .seccion-comparacion {
+        h2 {
+            width: 80%;
+        }
+
+        h3 {
+            margin-left: 0;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        p {
+            margin: variables.$spacing-small variables.$spacing-small variables.$spacing-medium;
+        }
+    }
+}
+
+/* Celulares grandes (576px - 767px) */
+@media screen and (max-width: 767px) {
+    .nav-bg {
+        width: 98%;
+        padding: 0.5rem variables.$spacing-small;
+
+        a {
+            @include mixins.text-responsive(2.2rem);
+        }
+    }
+
+    @include mixins.nav-vertical();
+
+    .icon-nav {
+        @include mixins.icon-size(3rem);
+        margin: auto 0.5rem;
+    }
+
+    h1 {
+        @include mixins.text-responsive(2.5rem);
+        margin: 1.5rem variables.$spacing-small;
+        padding: variables.$spacing-small;
+        letter-spacing: 0.1rem;
+    }
+
+    .subtitulo,
+    .sub2,
+    .titulo-tabla {
+        @include mixins.text-responsive(2.4rem, 90%);
+        padding: 0.8rem;
+    }
+
+    .grid-caracteristicas {
+        max-width: 95%;
+        gap: variables.$spacing-small;
+    }
+
+    .grid-perfil,
+    .grid-metodos,
+    .grid-seleccion,
+    .grid-motivaciones {
+        padding: 1.5rem;
+
+        h3 {
+            @include mixins.text-responsive(2.2rem);
+            padding: 0.8rem;
+        }
+
+        p {
+            @include mixins.text-responsive(1.8rem);
+        }
+    }
+
+    .intro,
+    .inicio,
+    .intro-tabla,
+    .intro-patrones,
+    .intro-expedientes,
+    .p5,
+    .p4,
+    .p4-grid {
+        @include mixins.text-responsive(1.8rem, 95%);
+    }
+
+    .container-intro img {
+        width: 95%;
+    }
+
+    .imagen-detalles {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tabla-archivos,
+    .tabla-patrones {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        table {
+            min-width: 800px;
+        }
+
+        th,
+        td {
+            @include mixins.text-responsive(1.6rem);
+            padding: variables.$spacing-small;
+        }
+    }
+
+    .seccion-comparacion {
+        h2 {
+            @include mixins.text-responsive(2.4rem);
+        }
+
+        h3 {
+            @include mixins.text-responsive(2.2rem);
+        }
+
+        p {
+            @include mixins.text-responsive(1.8rem);
+            margin: variables.$spacing-small 0.5rem 1.5rem;
+        }
+    }
+
+    footer {
+        padding: 1.5rem 0.5rem;
+
+        .footer {
+            @include mixins.text-responsive(1.6rem);
+        }
+    }
+}
+
+/* Celulares pequeños (< 576px) */
+@media screen and (max-width: 575px) {
+    .nav-bg a {
+        @include mixins.text-responsive(1.8rem);
+    }
+
+    @include mixins.nav-vertical(1rem, 0.8rem, 0.6rem 0.8rem, 0.3rem 0);
+
+    .icon-nav {
+        @include mixins.icon-size(2.5rem);
+    }
+
+    h1 {
+        @include mixins.text-responsive(2rem);
+        margin: variables.$spacing-small 0.5rem;
+        padding: 0.8rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .subtitulo,
+    .sub2,
+    .titulo-tabla {
+        @include mixins.text-responsive(2rem);
+        padding: 0.6rem;
+    }
+
+    .intro,
+    .inicio,
+    .intro-tabla,
+    .intro-patrones,
+    .intro-expedientes,
+    .p5,
+    .p4,
+    .p4-grid,
+    .grid-perfil p,
+    .grid-metodos p,
+    .grid-seleccion p,
+    .grid-motivaciones p,
+    .seccion-comparacion p {
+        @include mixins.text-responsive(1.6rem);
+    }
+
+    .grid-perfil h3,
+    .grid-metodos h3,
+    .grid-seleccion h3,
+    .grid-motivaciones h3,
+    .seccion-comparacion h3 {
+        @include mixins.text-responsive(1.8rem);
+    }
+
+    .icon-sub {
+        @include mixins.icon-size(2.5rem);
+    }
+
+    .tabla-archivos,
+    .tabla-patrones {
+        table {
+            width: 100%;
+            min-width: 700px;
+        }
+
+        th,
+        td {
+            @include mixins.text-responsive(1.4rem);
+            padding: 0.8rem;
+        }
+    }
+
+    .footer {
+        @include mixins.text-responsive(1.4rem);
+    }
+}

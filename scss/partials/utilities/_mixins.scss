@@ -70,7 +70,7 @@
     justify-content: center;
 }
 
-// Mixin para las tarjetas del grid de características
+// Mixin para las card del grid de características
 @mixin grid-card-styles {
     background-color: variables.$bg-h2;
     padding: 2rem;
@@ -92,5 +92,63 @@
         font-family: variables.$font-p;
         @include text-style(variables.$size-p-grid, variables.$color-p, 1.6);
         text-align: justify;
+    }
+}
+
+//Mixin para media queries 
+
+@mixin expediente-container-responsive($columns, $gap) {
+    grid-template-columns: $columns;
+    gap: $gap;
+}
+
+// Mixin para poner las iamgenes en una sola columna
+@mixin expediente-img-position($column: 1, $row: 2) {
+    grid-column: $column;
+    grid-row: $row;
+}
+
+// Mixin para cambiar tamaños de texto
+@mixin text-responsive($size, $width: null) {
+    font-size: $size;
+    @if $width {
+        width: $width;
+    }
+}
+
+// Mixin para grid 
+@mixin grid-layout($columns, $gap: 2rem) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+}
+
+// Mixin para icon
+@mixin icon-size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+// Mixin para nav vertical 
+@mixin nav-vertical($gap: 1.5rem, $padding-vertical: 1rem, $padding-links: 0.8rem 1rem, $padding-li: 0.5rem 0) {
+    .nav-ul {
+        flex-direction: column;
+        gap: $gap;
+        padding: $padding-vertical 0;
+
+        .nav-li {
+            width: 100%;
+            text-align: left;
+            padding: $padding-li;
+        }
+    }
+
+    .links-nav,
+    .nav-link-custom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: $padding-links;
     }
 }
