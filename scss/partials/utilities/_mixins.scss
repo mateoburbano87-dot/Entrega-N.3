@@ -139,3 +139,101 @@
         padding: $padding-links;
     }
 }
+
+
+// Mixin de aniamaciones
+
+// Mixin para aplicar animación básica
+
+@mixin animar($nombre, $duracion: 1s, $timing: ease-out, $retraso: 0s, $relleno: both) {
+    animation: $nombre $duracion $timing $retraso;
+    animation-fill-mode: $relleno;
+}
+
+// Mixin para animación de aparecer desde arriba
+
+@mixin aparecer-desde-arriba($duracion: 1.5s, $retraso: 0s) {
+    animation: aparecer-arriba $duracion ease-out $retraso;
+    animation-fill-mode: both;
+}
+
+// Mixin para animación de aparecer desde abajo
+
+@mixin aparecer-desde-abajo($duracion: 1s, $retraso: 0s) {
+    animation: aparecer-abajo $duracion ease-out $retraso;
+    animation-fill-mode: both;
+}
+
+// Mixin para animación de deslizar hacia derecha
+
+@mixin deslizar-desde-derecha($duracion: 0.8s, $retraso: 0s) {
+    animation: deslizar-derecha $duracion ease-out $retraso;
+    animation-fill-mode: both;
+}
+
+// Mixin para animación de deslizar hacia izquierda
+
+@mixin deslizar-desde-izquierda($duracion: 1s, $retraso: 0s) {
+    animation: deslizar-izquierda $duracion ease-out $retraso;
+    animation-fill-mode: both;
+}
+
+// Mixin para animación de zoom
+
+@mixin efecto-zoom($duracion: 1.5s, $retraso: 0s) {
+    animation: zoom $duracion ease-out $retraso;
+    animation-fill-mode: both;
+}
+
+// Mixin para aparecer con efecto zoom
+
+@mixin aparecer-zoom($duracion: 2s, $retraso: 0s) {
+    animation: aparecer-zoom $duracion ease-out $retraso;
+}
+
+// Mixin para aparición simple 
+
+@mixin aparecer-simple($duracion: 3s, $retraso: 0s) {
+    animation: aparecer $duracion ease-out $retraso;
+}
+
+// Mixin con efecto pulso
+
+@mixin pulso($duracion: 1s, $retraso: 0s) {
+    animation: pulsar $duracion ease-out $retraso;
+    animation-fill-mode: both;
+}
+
+// Mixin para crear secuencia de animación
+
+@mixin secuencia-animacion($nombre, $cantidad, $incremento: 1s, $duracion: 1.2s) {
+    animation: $nombre $duracion ease-out;
+    animation-fill-mode: both;
+    
+    @for $i from 1 through $cantidad {
+        &:nth-of-type(#{$i}) {
+            animation-delay: #{$i * $incremento};
+        }
+    }
+}
+
+// Mixin para tener un hover con transformación
+
+@mixin hover-transform($transform: scale(1.05), $duracion: 0.3s) {
+    @include transition(transform, $duracion);
+    
+    &:hover {
+        transform: $transform;
+    }
+}
+
+// Mixin para hover con sombra 
+
+@mixin hover-elevacion($escala: 1.03, $sombra: 0 10px 25px rgba(139, 0, 0, 0.4)) {
+    @include transition(all, 0.5s);
+    
+    &:hover {
+        transform: scale($escala);
+        box-shadow: $sombra;
+    }
+}

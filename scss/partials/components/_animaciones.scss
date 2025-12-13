@@ -1,0 +1,360 @@
+@use "../utilities/mixins";
+
+/* Keyframes de animaciones */
+
+@keyframes aparecer-arriba {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecer-zoom {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes deslizar-abajo {
+    from {
+        opacity: 0; 
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes parpadeo {
+    from, to { border-color: transparent; }
+    50% { border-color: #cd7f32; }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes deslizar-derecha {
+    from { 
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulsar {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes aparecer-abajo {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoom {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes deslizar-izquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes expandir-ancho {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes aparecer-izquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulso-suave {
+    0% { opacity: 1; }
+    50% { opacity: 0.9; }
+    100% { opacity: 1; }
+}
+
+@keyframes deslizar-abajo {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Animaciones globales*/
+
+/* Animación para la barra de navegación */
+
+.nav-bg{
+    @include mixins.aparecer-desde-abajo(2s);
+}
+
+/* Animación para los enlaces de navegación */
+.links-nav {
+    position: relative;
+    @include mixins.transition(all, 0.5s);
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #8b0000;
+        @include mixins.transition(width, 0.5s);
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+/* Animación para el footer */
+footer {
+    @include mixins.aparecer-desde-abajo(1.5s);
+}
+
+/*Animaciones para pagina lado oscuro*/
+
+h1 {
+    @include mixins.aparecer-desde-arriba(1.5s);
+}
+
+/*aniamciones para texto introduccion*/
+
+.intro{
+    @include mixins.aparecer-simple(3s);
+}
+
+.inicio{
+    @include mixins.aparecer-simple(3s);
+}
+
+/* Animación para la imagen de introducción */
+.img-intro {
+    @include mixins.aparecer-zoom(2s);
+    @include mixins.hover-transform(scale(1.02), 0.3s);
+}
+
+/* Animación para grid de características */
+.grid-perfil {
+    @include mixins.animar(deslizar-abajo, 1s, ease-out, 0.2s);
+}
+
+.grid-metodos {
+    @include mixins.animar(deslizar-abajo, 1s, ease-out, 0.4s);
+}
+
+.grid-seleccion {
+    @include mixins.animar(deslizar-abajo, 1s, ease-out, 0.6s);
+}
+
+.grid-motivaciones {
+    @include mixins.animar(deslizar-abajo, 1s, ease-out, 0.8s);
+}
+
+/* Animación para los íconos de características */
+.icon-sub {
+    @include mixins.transition(all, 0.3s);
+
+    .grid-perfil:hover &,
+    .grid-metodos:hover &,
+    .grid-seleccion:hover &,
+    .grid-motivaciones:hover & {
+        transform: rotate(15deg) scale(1.1);
+        color: #8b0000;
+    }
+}
+
+/*Animaciones para pagina archivos criminales*/
+
+/*animacion para intro tabla archivos*/
+
+.intro-tabla{
+    @include mixins.aparecer-simple(4s);
+}   
+
+/* Animación para la tabla */
+.tabla-archivos {
+    @include mixins.aparecer-simple(5s);
+}
+
+/* Animación para las filas de la tabla */
+.tabla-archivos tbody tr {
+    @include mixins.deslizar-desde-derecha(0.8s);
+    @include mixins.transition(all, 1s);
+
+    &:hover {
+        transform: translateX(5px);
+        box-shadow: 0 4px 8px rgba(139, 0, 0, 0.3);
+    }
+}
+
+/*Animaciones pagina patrones en la sombra*/
+
+/*aniamacion para intro tabla patrones*/
+
+.intro-patrones{
+    @include mixins.aparecer-simple(4s);
+}
+
+/* Animación para la tabla de patrones */
+.tabla-patrones {
+    @include mixins.aparecer-zoom(1.5s);
+}
+
+/* Animación para las celdas de la tabla */
+.tabla-patrones td {
+    @include mixins.animar(pulso-suave, 1s);
+    // Nota: pulso-suave usa un keyframe personalizado diferente al mixin pulso
+}
+
+/* Efecto hover para celdas */
+.tabla-patrones td {
+    @include mixins.transition(all, 0.3s);
+    position: relative;
+
+    &:hover {
+        background-color: rgba(139, 0, 0, 0.2);
+        transform: scale(1.05);
+        z-index: 1;
+        box-shadow: 0 0 10px rgba(139, 0, 0, 0.3);
+    }
+}
+
+/* Animación para las secciones de comparación */
+.seccion-comparacion h3 {
+    @include mixins.secuencia-animacion(deslizar-izquierda, 4, 1s, 1s);
+}
+
+.seccion-comparacion p {
+    @include mixins.secuencia-animacion(aparecer, 4, 1s, 1.5s);
+}
+
+/*Animaciones pagina expedientes secretos*/
+
+/*aniamacion para texto introduccion expediente*/
+
+.intro-expedientes{
+    @include mixins.aparecer-simple(4s);
+}
+
+/* Animación para las secciones de cada asesino */
+.bundy-container { 
+    @include mixins.aparecer-desde-abajo(1.2s, 1s); 
+}
+
+.gein-container { 
+    @include mixins.aparecer-desde-abajo(1.2s, 2s); 
+}
+
+.dahmer-container { 
+    @include mixins.aparecer-desde-abajo(1.2s, 3s); 
+}
+
+.gacy-container { 
+    @include mixins.aparecer-desde-abajo(1.2s, 4s); 
+}
+
+.jack-container { 
+    @include mixins.aparecer-desde-abajo(1.2s, 5s); 
+}
+
+/* Animación para las imágenes de perfil */
+.imagen-detalles {
+    @include mixins.efecto-zoom(1.5s);
+    @include mixins.transition(all, 0.5s);
+    filter: grayscale(30%);
+
+    &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.03);
+        box-shadow: 0 10px 25px rgba(139, 0, 0, 0.4);
+    }
+}
+
+/* Animación para los títulos de sección */
+.grid-titulo-bundy, .grid-titulo-gein, .grid-titulo-dahmer, .grid-titulo-gacy, .grid-titulo-jack {
+    position: relative;
+    @include mixins.deslizar-desde-izquierda(1s);
+}
+
+/* Animación para el texto de descripción */
+.p4, .p4-grid {
+    @include mixins.aparecer-simple(1.8s);
+}
+
+/*Animaciones pagina investigacion*/
+
+/* Animación para los párrafos de investigación */
+.p5 {
+    @include mixins.secuencia-animacion(aparecer-abajo, 5, 1s, 1.2s);
+}
+
+/* Animación para los subtítulos */
+.sub2 {
+    position: relative;
+    @include mixins.deslizar-desde-derecha(4s);
+    overflow: hidden;
+}
+
+.subtitulo{
+    @include mixins.deslizar-desde-izquierda(4s);
+}
