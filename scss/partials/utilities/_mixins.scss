@@ -116,19 +116,6 @@
     }
 }
 
-// Mixin para grid 
-@mixin grid-layout($columns, $gap: 2rem) {
-    display: grid;
-    grid-template-columns: $columns;
-    gap: $gap;
-}
-
-// Mixin para icon
-@mixin icon-size($width, $height: $width) {
-    width: $width;
-    height: $height;
-}
-
 // Mixin para nav vertical 
 @mixin nav-vertical($gap: 1.5rem, $padding-vertical: 1rem, $padding-links: 0.8rem 1rem, $padding-li: 0.5rem 0) {
     .nav-ul {
