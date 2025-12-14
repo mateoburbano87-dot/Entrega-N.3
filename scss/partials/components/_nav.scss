@@ -2,7 +2,7 @@
 @use "../utilities/mixins";
 @use "../utilities/extend";
 
-/* Estilos de la barra de navegación */
+/* Estilos para la nav */
 
 .nav-bg {
     background-color: variables.$nav-bg;
@@ -26,12 +26,12 @@
     }
 }
 
-// Clase específica para el brand
+// Clase para el brand
 .nav-brand-custom {
     @extend %nav-link-base;
 }
 
-// Clase para los enlaces de navegación personalizados
+// Clase para los enlaces de la nav
 .nav-link-custom {
     &.active {
         color: variables.$nav-link-color;

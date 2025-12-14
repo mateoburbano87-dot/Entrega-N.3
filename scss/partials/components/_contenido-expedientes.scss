@@ -5,6 +5,15 @@
 
 /* Estilos para la pagina expedientes */
 
+.titulo-pest{
+    font-family: variables.$font-h2;
+    @include mixins.text-style(variables.$size-h2, variables.$color-h2);
+    text-align: center;
+    margin-top: variables.$spacing-large;
+    text-transform: uppercase;
+    background-color: variables.$bg-h2;
+}
+
 .intro-expedientes {
     @include mixins.text-style(variables.$size-intro-expedientes, variables.$color-p, 1.6);
     text-align: justify;
@@ -28,6 +37,9 @@
     align-items: center;
     justify-content: center;
 }
+/* Estilos para los contenedores de expedientes */
+
+/* Estilos para las imágenes */
 
 img {
     margin: variables.$spacing-small auto;
@@ -45,6 +57,8 @@ img {
     margin-top: variables.$spacing-small;
     @include mixins.border-radius(variables.$spacing-small);
 }
+
+/* Estilos para texto y subtitulo */
 
 .p4 {
     grid-column: 2 / 3;
@@ -70,6 +84,8 @@ img {
     grid-row: 3;
     margin: variables.$spacing-medium auto;
 }
+
+/* Estilos para card de cada asesino */
 
 // Extend para contenedores de asesinos 
 .bundy-container,

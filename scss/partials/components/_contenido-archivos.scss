@@ -4,6 +4,15 @@
 
 /* Estilos pagina archivos */
 
+.titulo-pest{
+    font-family: variables.$font-h2;
+    @include mixins.text-style(variables.$size-h2, variables.$color-h2);
+    text-align: center;
+    margin-top: variables.$spacing-large;
+    text-transform: uppercase;
+    background-color: variables.$bg-h2;
+}
+
 .intro-tabla {
     @include mixins.text-style(variables.$size-intro-tabla, variables.$color-p, 1.6);
     text-align: justify;

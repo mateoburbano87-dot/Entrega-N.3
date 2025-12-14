@@ -4,7 +4,16 @@
 
 /* Estilos para la página lado oscuro */
 
-/* Estilos para la sección de introducción y el grid de características */
+/* Estilos para la introducción*/
+
+.titulo-pest{
+    font-family: variables.$font-h2;
+    @include mixins.text-style(variables.$size-h2, variables.$color-h2);
+    text-align: center;
+    margin-top: variables.$spacing-large;
+    text-transform: uppercase;
+    background-color: variables.$bg-h2;
+}
 
 .container-intro {
     @include mixins.grid-layout(60rem 50rem, 0 2rem);
@@ -81,7 +90,8 @@
     vertical-align: middle;
 }
 
-/* Aplicar estilos de grid card */
+/* Estilos para card deentro de grid */
+
 .grid-perfil,
 .grid-metodos,
 .grid-seleccion,

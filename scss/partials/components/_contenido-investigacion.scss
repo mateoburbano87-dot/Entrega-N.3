@@ -1,7 +1,16 @@
 @use "../utilities/variables";
 @use "../utilities/mixins";
 
-/* Estilos pagina Investigacion */
+/* Estilos para pagina Investigacion */
+
+.titulo-pest{
+    font-family: variables.$font-h2;
+    @include mixins.text-style(variables.$size-h2, variables.$color-h2);
+    text-align: center;
+    margin-top: variables.$spacing-large;
+    text-transform: uppercase;
+    background-color: variables.$bg-h2;
+}
 
 .p5 {
     @include mixins.text-style(2.4rem, variables.$color-p, 1.6);

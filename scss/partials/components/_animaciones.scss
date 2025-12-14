@@ -166,6 +166,10 @@
     }
 }
 
+.titulo-pest {
+    @include mixins.aparecer-desde-abajo(2s);
+}
+
 /* Animación para el footer */
 footer {
     @include mixins.aparecer-desde-abajo(1.5s);

@@ -4,6 +4,15 @@
 
 /* Estilos pagina Patrones de Crimen */
 
+.titulo-pest{
+    font-family: variables.$font-h2;
+    @include mixins.text-style(variables.$size-h2, variables.$color-h2);
+    text-align: center;
+    margin-top: variables.$spacing-large;
+    text-transform: uppercase;
+    background-color: variables.$bg-h2;
+}
+
 .intro-patrones {
     @include mixins.text-style(variables.$size-intro-tabla, variables.$color-p-tabla, 1.6);
     text-align: justify;
@@ -15,6 +24,8 @@
     }
 }
 
+/* Estilos tabla patrones */
+
 .tabla-patrones {
     tbody tr:hover {
         background-color: rgba(139, 0, 0, 0.3);
@@ -22,6 +33,8 @@
     
     @extend %tabla-base;
 }
+
+/* Estilos para sección comparación */
 
 .seccion-comparacion {
     h2 {

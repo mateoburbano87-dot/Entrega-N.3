@@ -111,7 +111,7 @@ h1 {
   color: #cd7f32;
 }
 
-/* Estilos de tipografía globales */
+/* Estilos de tipografía */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -154,7 +154,7 @@ body {
   background-size: cover;
 }
 
-/* Estilos de la barra de navegación */
+/* Estilos para la nav */
 .nav-bg {
   background-color: rgba(26, 26, 46, 0.95);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
@@ -205,7 +205,18 @@ body {
 }
 
 /* Estilos para la página lado oscuro */
-/* Estilos para la sección de introducción y el grid de características */
+/* Estilos para la introducción*/
+.titulo-pest {
+  font-family: "Instrument Serif", serif;
+  font-size: 3.2rem;
+  color: #cd7f32;
+  line-height: normal;
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  background-color: rgba(26, 26, 46, 0.9);
+}
+
 .container-intro {
   display: grid;
   grid-template-columns: 60rem 50rem;
@@ -292,7 +303,7 @@ body {
   vertical-align: middle;
 }
 
-/* Aplicar estilos de grid card */
+/* Estilos para card deentro de grid */
 .grid-perfil,
 .grid-metodos,
 .grid-seleccion,
@@ -328,6 +339,17 @@ body {
 }
 
 /* Estilos pagina archivos */
+.titulo-pest {
+  font-family: "Instrument Serif", serif;
+  font-size: 3.2rem;
+  color: #cd7f32;
+  line-height: normal;
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  background-color: rgba(26, 26, 46, 0.9);
+}
+
 .intro-tabla {
   font-size: 2.4rem;
   color: #8a8a8a;
@@ -358,6 +380,17 @@ body {
 }
 
 /* Estilos pagina Patrones de Crimen */
+.titulo-pest {
+  font-family: "Instrument Serif", serif;
+  font-size: 3.2rem;
+  color: #cd7f32;
+  line-height: normal;
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  background-color: rgba(26, 26, 46, 0.9);
+}
+
 .intro-patrones {
   font-size: 2.4rem;
   color: #8a8a8a;
@@ -369,10 +402,12 @@ body {
   color: #cd7f32;
 }
 
+/* Estilos tabla patrones */
 .tabla-patrones tbody tr:hover {
   background-color: rgba(139, 0, 0, 0.3);
 }
 
+/* Estilos para sección comparación */
 .seccion-comparacion h2 {
   font-size: 3.2rem;
   color: #cd7f32;
@@ -409,6 +444,17 @@ body {
 }
 
 /* Estilos para la pagina expedientes */
+.titulo-pest {
+  font-family: "Instrument Serif", serif;
+  font-size: 3.2rem;
+  color: #cd7f32;
+  line-height: normal;
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  background-color: rgba(26, 26, 46, 0.9);
+}
+
 .intro-expedientes {
   font-size: 2.6rem;
   color: #8a8a8a;
@@ -434,6 +480,8 @@ body {
   justify-content: center;
 }
 
+/* Estilos para los contenedores de expedientes */
+/* Estilos para las imágenes */
 img {
   margin: 1rem auto;
   border-radius: 2rem;
@@ -453,6 +501,7 @@ img {
   border-radius: 1rem;
 }
 
+/* Estilos para texto y subtitulo */
 .p4 {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -483,7 +532,19 @@ img {
   margin: 2rem auto;
 }
 
-/* Estilos pagina Investigacion */
+/* Estilos para card de cada asesino */
+/* Estilos para pagina Investigacion */
+.titulo-pest {
+  font-family: "Instrument Serif", serif;
+  font-size: 3.2rem;
+  color: #cd7f32;
+  line-height: normal;
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  background-color: rgba(26, 26, 46, 0.9);
+}
+
 .p5 {
   font-size: 2.4rem;
   color: #8a8a8a;
@@ -688,6 +749,11 @@ footer {
 }
 .links-nav:hover::after {
   width: 100%;
+}
+
+.titulo-pest {
+  animation: aparecer-abajo 2s ease-out 0s;
+  animation-fill-mode: both;
 }
 
 /* Animación para el footer */
