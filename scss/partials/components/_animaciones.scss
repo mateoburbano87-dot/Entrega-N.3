@@ -181,7 +181,7 @@ h1 {
     @include mixins.aparecer-desde-arriba(1.5s);
 }
 
-/*aniamciones para texto introduccion*/
+/*aniamciones para texto de introduccion*/
 
 .intro{
     @include mixins.aparecer-simple(3s);
@@ -251,7 +251,7 @@ h1 {
     }
 }
 
-/*Animaciones pagina patrones en la sombra*/
+/*Animaciones para pagina patrones en la sombra*/
 
 /*aniamacion para intro tabla patrones*/
 
@@ -292,7 +292,7 @@ h1 {
     @include mixins.secuencia-animacion(aparecer, 4, 1s, 1.5s);
 }
 
-/*Animaciones pagina expedientes secretos*/
+/*Animaciones para pagina expedientes secretos*/
 
 /*aniamacion para texto introduccion expediente*/
 
@@ -345,7 +345,7 @@ h1 {
     @include mixins.aparecer-simple(1.8s);
 }
 
-/*Animaciones pagina investigacion*/
+/*Animaciones para pagina investigacion*/
 
 /* Animación para los párrafos de investigación */
 .p5 {
