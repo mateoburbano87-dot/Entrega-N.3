@@ -14,11 +14,15 @@
 @use "./partials/components/contenido-patrones";
 @use "./partials/components/contenido-expedientes";
 @use "./partials/components/contenido-investigacion";
-@use "./partials/components/media-querie";
-@use "./partials/components/animaciones";
+
 
 
 //Fotter
 @use "./partials/base/fotter";
 
 
+// Animaciones
+@use "./partials/components/animaciones";
+
+// Media Queries
+@use "./partials/components/media-querie";
