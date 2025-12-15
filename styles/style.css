@@ -768,7 +768,7 @@ h1 {
   animation-fill-mode: both;
 }
 
-/*aniamciones para texto introduccion*/
+/*aniamciones para texto de introduccion*/
 .intro {
   animation: aparecer 3s ease-out 0s;
 }
@@ -838,7 +838,7 @@ h1 {
   box-shadow: 0 4px 8px rgba(139, 0, 0, 0.3);
 }
 
-/*Animaciones pagina patrones en la sombra*/
+/*Animaciones para pagina patrones en la sombra*/
 /*aniamacion para intro tabla patrones*/
 .intro-patrones {
   animation: aparecer 4s ease-out 0s;
@@ -873,16 +873,16 @@ h1 {
   animation-fill-mode: both;
 }
 .seccion-comparacion h3:nth-of-type(1) {
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 .seccion-comparacion h3:nth-of-type(2) {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 .seccion-comparacion h3:nth-of-type(3) {
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 .seccion-comparacion h3:nth-of-type(4) {
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .seccion-comparacion p {
@@ -890,19 +890,19 @@ h1 {
   animation-fill-mode: both;
 }
 .seccion-comparacion p:nth-of-type(1) {
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 .seccion-comparacion p:nth-of-type(2) {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 .seccion-comparacion p:nth-of-type(3) {
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 .seccion-comparacion p:nth-of-type(4) {
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
-/*Animaciones pagina expedientes secretos*/
+/*Animaciones para pagina expedientes secretos*/
 /*aniamacion para texto introduccion expediente*/
 .intro-expedientes {
   animation: aparecer 4s ease-out 0s;
@@ -959,25 +959,28 @@ h1 {
   animation: aparecer 1.8s ease-out 0s;
 }
 
-/*Animaciones pagina investigacion*/
+/*Animaciones para pagina investigacion*/
 /* Animación para los párrafos de investigación */
 .p5 {
-  animation: aparecer-abajo 1.2s ease-out;
+  animation: aparecer-abajo 0.2s ease-out;
   animation-fill-mode: both;
 }
 .p5:nth-of-type(1) {
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 .p5:nth-of-type(2) {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 .p5:nth-of-type(3) {
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 .p5:nth-of-type(4) {
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 .p5:nth-of-type(5) {
+  animation-delay: 4s;
+}
+.p5:nth-of-type(6) {
   animation-delay: 5s;
 }
 
