@@ -139,9 +139,10 @@
         @include mixins.text-responsive(2rem, 95%);
     }
 
-    .tabla-archivos {
+    .tabla-patrones {
         overflow-x: auto;
-
+        -webkit-overflow-scrolling: touch;
+        
         table {
             min-width: 800px;
         }

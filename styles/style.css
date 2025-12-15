@@ -1140,10 +1140,11 @@ h1 {
     font-size: 2rem;
     width: 95%;
   }
-  .tabla-archivos {
+  .tabla-patrones {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
-  .tabla-archivos table {
+  .tabla-patrones table {
     min-width: 800px;
   }
   .bundy-container,
