@@ -1140,6 +1140,12 @@ h1 {
     font-size: 2rem;
     width: 95%;
   }
+  .tabla-archivos {
+    overflow-x: auto;
+  }
+  .tabla-archivos table {
+    min-width: 800px;
+  }
   .bundy-container,
   .gein-container,
   .dahmer-container,
