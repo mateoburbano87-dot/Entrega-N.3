@@ -1134,18 +1134,26 @@ h1 {
   .intro-patrones,
   .intro-expedientes,
   .p5,
-  .tabla-archivos,
-  .tabla-patrones,
   .titulo-tabla {
     font-size: 2rem;
     width: 95%;
   }
+  .tabla-archivos,
   .tabla-patrones {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    width: 98%;
+    margin: 2rem auto;
   }
-  .tabla-patrones table {
-    min-width: 800px;
+  .tabla-archivos th,
+  .tabla-archivos td,
+  .tabla-patrones th,
+  .tabla-patrones td {
+    font-size: 1.4rem;
+    padding: 0.8rem 0.5rem;
+  }
+  .tabla-archivos th,
+  .tabla-patrones th {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
   }
   .bundy-container,
   .gein-container,
