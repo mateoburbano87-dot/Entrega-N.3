@@ -212,7 +212,7 @@
     
     @for $i from 1 through $cantidad {
         &:nth-of-type(#{$i}) {
-            animation-delay: #{$i * $incremento};
+            animation-delay: #{($i - 1) * $incremento};
         }
     }
 }
