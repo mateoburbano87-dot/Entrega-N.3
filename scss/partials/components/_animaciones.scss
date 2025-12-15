@@ -349,7 +349,7 @@ h1 {
 
 /* Animación para los párrafos de investigación */
 .p5 {
-    @include mixins.secuencia-animacion(aparecer-abajo, 5, 1s, 1.2s);
+    @include mixins.secuencia-animacion(aparecer-abajo, 5, 1s, 0.2s);
 }
 
 /* Animación para los subtítulos */
