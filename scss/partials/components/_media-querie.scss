@@ -139,6 +139,14 @@
         @include mixins.text-responsive(2rem, 95%);
     }
 
+    .tabla-archivos {
+        overflow-x: auto;
+
+        table {
+            min-width: 800px;
+        }
+    }
+
     .bundy-container,
     .gein-container,
     .dahmer-container,
