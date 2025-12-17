@@ -192,12 +192,14 @@ h1 {
 }
 
 /* Animación para la imagen de introducción */
+
 .img-intro {
     @include mixins.aparecer-zoom(2s);
     @include mixins.hover-transform(scale(1.02), 0.3s);
 }
 
 /* Animación para grid de características */
+
 .grid-perfil {
     @include mixins.animar(deslizar-abajo, 1s, ease-out, 0.2s);
 }
@@ -215,6 +217,7 @@ h1 {
 }
 
 /* Animación para los íconos de características */
+
 .icon-sub {
     @include mixins.transition(all, 0.3s);
 
@@ -236,11 +239,13 @@ h1 {
 }   
 
 /* Animación para la tabla */
+
 .tabla-archivos {
     @include mixins.aparecer-simple(5s);
 }
 
 /* Animación para las filas de la tabla */
+
 .tabla-archivos tbody tr {
     @include mixins.deslizar-desde-derecha(0.8s);
     @include mixins.transition(all, 1s);
@@ -260,17 +265,20 @@ h1 {
 }
 
 /* Animación para la tabla de patrones */
+
 .tabla-patrones {
     @include mixins.aparecer-zoom(1.5s);
 }
 
 /* Animación para las celdas de la tabla */
+
 .tabla-patrones td {
     @include mixins.animar(pulso-suave, 1s);
     // Nota: pulso-suave usa un keyframe personalizado diferente al mixin pulso
 }
 
 /* Efecto hover para celdas */
+
 .tabla-patrones td {
     @include mixins.transition(all, 0.3s);
     position: relative;
@@ -284,6 +292,7 @@ h1 {
 }
 
 /* Animación para las secciones de comparación */
+
 .seccion-comparacion h3 {
     @include mixins.secuencia-animacion(deslizar-izquierda, 4, 1s, 1s);
 }
@@ -301,6 +310,7 @@ h1 {
 }
 
 /* Animación para las secciones de cada asesino */
+
 .bundy-container { 
     @include mixins.aparecer-desde-abajo(1.2s, 1s); 
 }
@@ -322,6 +332,7 @@ h1 {
 }
 
 /* Animación para las imágenes de perfil */
+
 .imagen-detalles {
     @include mixins.efecto-zoom(1.5s);
     @include mixins.transition(all, 0.5s);
@@ -335,12 +346,14 @@ h1 {
 }
 
 /* Animación para los títulos de sección */
+
 .grid-titulo-bundy, .grid-titulo-gein, .grid-titulo-dahmer, .grid-titulo-gacy, .grid-titulo-jack {
     position: relative;
     @include mixins.deslizar-desde-izquierda(1s);
 }
 
 /* Animación para el texto de descripción */
+
 .p4, .p4-grid {
     @include mixins.aparecer-simple(1.8s);
 }
@@ -348,11 +361,13 @@ h1 {
 /*Animaciones para pagina investigacion*/
 
 /* Animación para los párrafos de investigación */
+
 .p5 {
     @include mixins.secuencia-animacion(aparecer-abajo, 6, 1s, 0.2s);
 }
 
 /* Animación para los subtítulos */
+
 .sub2 {
     position: relative;
     @include mixins.deslizar-desde-derecha(4s);

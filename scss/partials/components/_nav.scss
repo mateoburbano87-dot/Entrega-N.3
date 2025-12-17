@@ -26,12 +26,14 @@
     }
 }
 
-// Clase para el brand
+// Extend para el brand
+
 .nav-brand-custom {
     @extend %nav-link-base;
 }
 
 // Clase para los enlaces de la nav
+
 .nav-link-custom {
     &.active {
         color: variables.$nav-link-color;

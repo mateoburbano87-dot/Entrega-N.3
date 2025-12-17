@@ -4,6 +4,7 @@
 /* Media Queries */
 
 /* PC medianas */
+
 @media screen and (max-width: 1680px) {
     .nav-bg,
     footer,
@@ -41,6 +42,7 @@
 }
 
 /* PC pequeñas */
+
 @media screen and (max-width: 1440px) {
     .nav-bg,
     footer,
@@ -82,6 +84,7 @@
 }
 
 /* Tablets */
+
 @media screen and (max-width: 1024px) {
     .nav-bg,
     footer {
@@ -206,6 +209,7 @@
 }
 
 /* Celulares grandes */
+
 @media screen and (max-width: 767px) {
     .nav-bg {
         width: 98%;
@@ -321,6 +325,7 @@
 }
 
 /* Celulares pequeños */
+
 @media screen and (max-width: 575px) {
     .nav-bg a {
         @include mixins.text-responsive(1.8rem);
